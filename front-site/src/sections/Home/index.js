@@ -37,7 +37,7 @@ function Home() {
   const [indexFocusedCarousel, setIndexFocusedCarousel] = useState(0);
 
   useEffect(() => {
-    console.log('HOME', indexFocusedCarousel);
+    // console.log('HOME', indexFocusedCarousel);
   }, [indexFocusedCarousel]);
   
   return (
