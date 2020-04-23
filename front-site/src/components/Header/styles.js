@@ -58,12 +58,10 @@ export const SocialMedias = styled.div`
   align-items: center;
   padding: 0 16px;
   border-left: 1px solid #fff;
-  /* border-left: 1px solid #d9d9d9; */
 `;
 
 export const CircleBox = styled.div`
   background: #fff;
-  /* background: #d9d9d9; */
   width: 32px;
   height: 32px;
   border-radius: 50%;
