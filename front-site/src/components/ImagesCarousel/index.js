@@ -25,7 +25,7 @@ function ImagesCarousel({ images, imgAlt })  {
   useEffect(() => {
     setIndexFocusedCarousel(focusedIndex);
     // console.log('aaaa', focusedIndex);
-  }, [focusedIndex]);
+  }, [setIndexFocusedCarousel, focusedIndex]);
 
   document.addEventListener("DOMContentLoaded", function() {
     var elems = document.querySelectorAll('.carousel');

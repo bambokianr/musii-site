@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import HomeContext from './context';
-import { Container, AnimatedBackground, ImageBackground, Description, FirstPhrase, SecondPhrase, ThirdPhrase } from './styles';
+import { Container, AnimatedBackground, ImageBackground, Description, FirstPhrase, SecondPhrase, ThirdPhrase, CallToAction, StoresBox } from './styles';
 import ImagesCarousel from '../../components/ImagesCarousel';
 import LegendCarousel from '../../components/LegendCarousel';
+
+import appStore from '../../assets/appstore.png';
+import googlePlay from '../../assets/googleplay.png';
 
 import img1 from '../../assets/img1.png';
 import img2 from '../../assets/img2.png';
@@ -51,6 +54,10 @@ function Home() {
               <SecondPhrase>Milhões de <span>conexões</span>.</SecondPhrase>
               <ThirdPhrase>Conectando pessoas pela música.</ThirdPhrase>
               <LegendCarousel legend={screensCarousel[indexFocusedCarousel].legend} />
+              <StoresBox>
+                <CallToAction width="178.2px" src={appStore} alt="Baixar na AppStore" />
+                <CallToAction width="191px" src={googlePlay} alt="Baixar no GooglePlay" />
+              </StoresBox>
             </Description>
           </Container>
         </ImageBackground>

@@ -111,3 +111,17 @@ export const ThirdPhrase = styled.span`
     font-size: 2.4rem;
   }
 `;
+
+export const StoresBox = styled.div`
+  display: flex;
+  align-items: center;
+  /* padding: 40px 0; */
+`;
+
+export const CallToAction = styled.img`
+  /* width: 170px; */
+  /* width: 20%; */
+  cursor: pointer;
+  padding-top: 36px;
+  padding-right: 16px;
+`;
