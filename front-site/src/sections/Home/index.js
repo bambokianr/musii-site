@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import HomeContext from './context';
 import { Container, AnimatedBackground, ImageBackground, Description, FirstPhrase, SecondPhrase, ThirdPhrase } from './styles';
 import ImagesCarousel from '../../components/ImagesCarousel';
 import LegendCarousel from '../../components/LegendCarousel';
@@ -33,20 +34,28 @@ const screensCarousel = [
 ]
 
 function Home() {
+  const [indexFocusedCarousel, setIndexFocusedCarousel] = useState(0);
+
+  useEffect(() => {
+    console.log('HOME', indexFocusedCarousel);
+  }, [indexFocusedCarousel]);
+  
   return (
-    <AnimatedBackground>
-      <ImageBackground>  
-        <Container>
-          <ImagesCarousel images={screensCarousel} imgAlt="telas do aplicativo Musii" />
-          <Description>
-            <FirstPhrase>Uma <span>música</span>.</FirstPhrase>
-            <SecondPhrase>Milhões de <span>conexões</span>.</SecondPhrase>
-            <ThirdPhrase>Conectando pessoas pela música.</ThirdPhrase>
-            <LegendCarousel legend={screensCarousel[0].legend} />
-          </Description>
-        </Container>
-      </ImageBackground>
-    </AnimatedBackground>
+    <HomeContext.Provider value={{ indexFocusedCarousel, setIndexFocusedCarousel }} >
+      <AnimatedBackground>
+        <ImageBackground>  
+          <Container>
+            <ImagesCarousel images={screensCarousel} imgAlt="telas do aplicativo Musii" />
+            <Description>
+              <FirstPhrase>Uma <span>música</span>.</FirstPhrase>
+              <SecondPhrase>Milhões de <span>conexões</span>.</SecondPhrase>
+              <ThirdPhrase>Conectando pessoas pela música.</ThirdPhrase>
+              <LegendCarousel legend={screensCarousel[indexFocusedCarousel].legend} />
+            </Description>
+          </Container>
+        </ImageBackground>
+      </AnimatedBackground>
+    </HomeContext.Provider>
   );
 }
 export default Home;
