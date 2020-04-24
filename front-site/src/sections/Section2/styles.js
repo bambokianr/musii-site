@@ -57,24 +57,24 @@ export const CategoriesContainer = styled.div`
 export const CategoriesBox = styled.div`
   position: relative;
   width: 100%;
-  height: calc(230px - 50px); /*250*/
+  height: calc(230px - 50px);
   margin: 0 25px;
   border-radius: 10px;
   border: 2.5px solid #cc78f7;
 
   &:hover div:nth-child(1) {
     top: 12px;
-    left: calc(50% - 30px);
-    width: 60px;
-    height: 60px;
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    background: #cc78f7;
+    background: #451c5a;
   }
 
-  &:hover div:nth-child(1) span {
+  &:hover div:nth-child(1) span img {
     color: #4d1d69;
-    font-size: 32px;
-    margin-top: 4.5px;
+    height: 32px;
+    margin-top: 10px;
   }
 
   &:hover div:nth-child(2) {
@@ -91,7 +91,7 @@ export const CategoriesIcon = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 4px;
-  transition: 1s;
+  transition: 0.5s;
   z-index: 1;
 `;
 
@@ -100,10 +100,11 @@ export const Icon = styled.span`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 12px;
-  font-size: 80px;
-  transform: 0.5s;
-  color: #cc78f7;
+  transform: 5s;
+
+  img {
+    height: 80px;
+  }
 `;
 
 export const CategoriesContent = styled.div`
@@ -112,13 +113,14 @@ export const CategoriesContent = styled.div`
   height: calc(100% - 120px);
   text-align: center;
   padding: 20px;
-  transition: 1s;
+  transition: 0.5s;
   opacity: 0;
   display: none;
 
   h3 {
     margin: 0 0 20px;
-    /* margin: 0; */
+    font-size: 16px;
+    font-weight: 700;
     padding: 0;
     color: #cc78f7;
     font-size: 2rem;
