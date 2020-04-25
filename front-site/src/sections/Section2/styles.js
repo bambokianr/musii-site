@@ -14,7 +14,6 @@ export const Container = styled.div`
   margin: 0 auto;
   color: #FFF;
   padding: 100px 0;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,31 +42,43 @@ export const ThirdPhrase = styled.span`
   line-height: 1em;
   font-weight: 600;
   font-size: 2.8rem;
-  margin: 24px 0 32px;
+  margin: 24px 0 12px;
 `;
 
 export const CategoriesContainer = styled.div`
-  width: 100%;
-  /* margin-bottom: 10px; */
+  width: 60%;
   display: flex;
   align-items: center;
-  padding: 0 100px;
 `;
 
 export const CategoriesBox = styled.div`
+  cursor: pointer;
   position: relative;
   width: 100%;
-  height: calc(230px - 50px);
-  margin: 0 25px;
-  border-radius: 10px;
-  border: 2.5px solid #cc78f7;
+  height: 180px;
+
+  & > h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 72px;
+    color: #cc78f7;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &:hover > h3 {
+    display: none;
+  }
 
   &:hover div:nth-child(1) {
     top: 12px;
-    left: calc(50% - 32px);
-    width: 64px;
-    height: 64px;
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
+    /* background: #fff; */
     background: #451c5a;
   }
 
@@ -77,7 +88,7 @@ export const CategoriesBox = styled.div`
     margin-top: 10px;
   }
 
-  &:hover div:nth-child(2) {
+  &:hover div:nth-child(3) {
     display: block;
     top: 76px;
     opacity: 1;
@@ -116,12 +127,12 @@ export const CategoriesContent = styled.div`
   transition: 0.5s;
   opacity: 0;
   display: none;
-
+  
   h3 {
-    margin: 0 0 20px;
+    margin: 8px 0 0;
+    padding: 0;
     font-size: 16px;
     font-weight: 700;
-    padding: 0;
     color: #cc78f7;
     font-size: 2rem;
     line-height: 0;
@@ -129,10 +140,10 @@ export const CategoriesContent = styled.div`
 
   p {
     font-size: 14px;
-    width: 80%;
     text-align: center;
     line-height: 1.2em;
     margin: 0 auto;
+    margin-top: 16px;
     padding: 0;
     color: #868686;
   }
