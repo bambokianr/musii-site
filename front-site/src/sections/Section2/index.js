@@ -15,6 +15,7 @@ function Section2() {
           <CategoriesContainer>
             <CategoriesBox>
               <CategoriesIcon><Icon><img src={musicIcon} alt="Ícone música" /></Icon></CategoriesIcon>
+              <h3>músicas</h3>
               <CategoriesContent>
                 <h3>músicas</h3>
                 <p>Depare-se com novos artistas, bandas e álbuns que nunca havia escutado antes.</p>
@@ -22,6 +23,7 @@ function Section2() {
             </CategoriesBox>
             <CategoriesBox>
               <CategoriesIcon><Icon><img src={peopleIcon} alt="Ícone pessoas" /></Icon></CategoriesIcon>
+              <h3>pessoas</h3>
               <CategoriesContent>
                 <h3>pessoas</h3>
                 <p>Descubra o perfil musical dos seus amigos e conecte-se a quem tem o gosto parecido com você.</p>
@@ -29,6 +31,7 @@ function Section2() {
             </CategoriesBox>
             <CategoriesBox>
               <CategoriesIcon><Icon><img src={eventsIcon} alt="Ícone eventos" /></Icon></CategoriesIcon>
+              <h3>lugares</h3>
               <CategoriesContent>
                 <h3>lugares</h3>
                 <p>Encontre bares, baladas e casas de show que tocam o som que você quer ouvir.</p>
