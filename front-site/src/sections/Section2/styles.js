@@ -29,10 +29,10 @@ export const FirstPhrase = styled.span`
 `;
 
 export const SecondPhrase = styled.span`
-  width: 75%;
-  color: #868686;
+  width: 65%;
+  color: #565060;
   line-height: 1em;
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-align: center;
   margin: 16px 0;
 `;
@@ -62,7 +62,7 @@ export const CategoriesBox = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 72px;
+    margin-top: 68px;
     color: #cc78f7;
     font-weight: 700;
     font-size: 24px;
@@ -74,17 +74,17 @@ export const CategoriesBox = styled.div`
 
   &:hover div:nth-child(1) {
     top: 12px;
-    left: calc(50% - 35px);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    /* background: #fff; */
-    background: #451c5a;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 20%;
+    /* border-radius: 50%; */
+    background: rgb(255, 255, 255, 0.2);
   }
 
   &:hover div:nth-child(1) span img {
     color: #4d1d69;
-    height: 32px;
+    height: 38px;
     margin-top: 10px;
   }
 
@@ -129,7 +129,7 @@ export const CategoriesContent = styled.div`
   display: none;
   
   h3 {
-    margin: 8px 0 0;
+    margin: 16px 0 0;
     padding: 0;
     font-size: 16px;
     font-weight: 700;
@@ -139,12 +139,12 @@ export const CategoriesContent = styled.div`
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     line-height: 1.2em;
     margin: 0 auto;
     margin-top: 16px;
     padding: 0;
-    color: #868686;
+    color: #565060;
   }
 `;
