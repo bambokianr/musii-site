@@ -3,8 +3,8 @@ import waveBackground from '../../assets/wave-background.png';
 
 export const AnimatedBackground = styled.div`
   background: linear-gradient(215deg, #e71474 0%, #481467 78%);
-  background-size: 400% 400%;
-  animation: move-grad 8s ease-in-out infinite;
+  /* background-size: 400% 400%;
+  animation: move-grad 8s ease-in-out infinite; */
   /* position: relative; */
 
   @keyframes move-grad {

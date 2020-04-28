@@ -3,6 +3,7 @@ import GlobalStyle from'./styles/global';
 import Header from './components/Header';
 import Home from './sections/Home';
 import Section2 from './sections/Section2';
+import Footer from './sections/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Home />
       <Section2 />
+      <Footer />
       <GlobalStyle />
     </>
   );
