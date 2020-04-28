@@ -19,7 +19,7 @@ function Footer() {
             <Text>Buscamos, em nossas ações, ser uma rede social justa, fazendo uso responsável e transparente dos seus dados. Saiba mais em nossa <Button>POLÍTICA DE PRIVACIDADE</Button>.</Text>
           </ColumnBox>
           <ColumnBox>
-            <Title>SUPORTE</Title>
+            <Title style={{marginTop: '24px'}}>SUPORTE</Title>
             <RowBox>
               <span>Como podemos ajudar?</span>
               <EmailButton subject="Problemas de funcionamento" />

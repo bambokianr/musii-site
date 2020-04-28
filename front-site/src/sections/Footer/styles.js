@@ -70,7 +70,7 @@ export const RowBox = styled.div`
 export const OtherInfosBox = styled.div`
     display: flex;
     justify-content: space-between;
-    margin-top: 28px;
+    margin-top: 44px;
     font-size: 14px;
     color: #771292;
 
