@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Background, ColumnBox, Logo, Text, Button, Title, RowBox, InfosBox, OtherInfosBox, Contact, ContactItem, ContactText } from './styles';
+import { Container, Background, ColumnBox, Logo, Text, Button, Title, RowBox, OtherInfosBox, Contact, ContactItem, ContactText } from './styles';
 import logoVertical from '../../assets/logo_vertical_roxo.svg';
 import { MdEmail } from "react-icons/md";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
@@ -11,7 +11,7 @@ function Footer() {
   return (
     <Background>
       <Container>
-        <InfosBox>
+        <div>
           <ColumnBox>
             <Logo src={logoVertical} alt="Logo Musii" /> 
             <Text>O <Button>musii</Button> uma <span>rede única de pessoas</span> com a missão de homenagear a <span>música</span> e compartilhar tudo que ela abrange e provoca.</Text>
@@ -30,7 +30,7 @@ function Footer() {
             <Title>PERGUNTAS FREQUENTES</Title>
             {faq.map(obj => <ExpansionPanel title={obj.title} content={obj.content} />)}
           </ColumnBox>
-        </InfosBox>
+        </div>
         <OtherInfosBox>
           <Contact>
             <ContactItem><MdEmail color="#771292" size={20} /><ContactText>contato@musii.app</ContactText></ContactItem>

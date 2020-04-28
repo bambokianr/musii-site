@@ -7,9 +7,9 @@ function EmailButton({ email, subject, body }) {
   const bodyHref = body ? `&body=${body}` : '';
 
   return (
-      <Content>
-        <a href={emailHref+subjectHref+bodyHref}>{subject}</a>
-      </Content>
+    <Content>
+      <a href={emailHref+subjectHref+bodyHref}>{subject}</a>
+    </Content>
   );
 }
 export default EmailButton;

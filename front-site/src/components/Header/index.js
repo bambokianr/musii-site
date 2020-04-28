@@ -13,10 +13,9 @@ function Header() {
         <Logo src={logoHorizontal} alt="Logo Musii" />
         <Links>
           <AnchorsList>
-            <li><a href="#">Âncora 1</a></li>  
-            <li><a href="#">Âncora 2</a></li>  
-            <li><a href="#">Âncora 3</a></li>  
-            <li><a href="#">Âncora 4</a></li>  
+            <li><a href="#">Home</a></li>  
+            <li><a href="#">Funcionalidades</a></li>  
+            <li><a href="#">Sobre nós</a></li>  
           </AnchorsList>
           
           <SocialMedias>

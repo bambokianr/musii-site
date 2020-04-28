@@ -21,7 +21,7 @@ export const Container = styled.div`
 `;
 
 export const FirstPhrase = styled.span`
-  color: #451c5a;
+  color: #771292;
   font-weight: 600;
   line-height: 1em;
   font-size: 4.4rem;

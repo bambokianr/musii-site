@@ -43,8 +43,6 @@ export const Container = styled.div`
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
-  /* text-align: center; */
-
 `;
 
 export const FirstPhrase = styled.span`
@@ -115,12 +113,17 @@ export const ThirdPhrase = styled.span`
 export const StoresBox = styled.div`
   display: flex;
   align-items: center;
-  /* padding: 40px 0; */
+
+  a {
+    opacity: 0.8;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
 `;
 
 export const CallToAction = styled.img`
-  /* width: 170px; */
-  /* width: 20%; */
   cursor: pointer;
   padding-top: 36px;
   padding-right: 16px;

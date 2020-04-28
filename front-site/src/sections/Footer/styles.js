@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 export const Background = styled.div`
-  /* height: 400px; */
   background: #f6f8f6;
-  /* color: #771292; */
   color: #565060;
   padding: 72px 0 20px;
 `;
@@ -12,22 +10,21 @@ export const Container = styled.div`
   padding: 0 24px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   margin: 0 auto;
   width:100%;
   height: 100%;
   max-width: 1280px;
-`;
 
-export const InfosBox = styled.div`
-  display: flex;
-  width: 100%;
+  div {
+    display: flex;
+    width: 100%;
+  }
+
 `;
 
 export const ColumnBox = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 
   &:nth-child(1) {
     width: 68%;
@@ -38,7 +35,6 @@ export const ColumnBox = styled.div`
 export const Logo = styled.img`
   width: 90px;
   margin-bottom: 20px;
-  /* margin: 0 24px; */
 `;
 
 export const Text = styled.span`
@@ -65,7 +61,6 @@ export const Title = styled.span`
 export const RowBox = styled.div`
   width: 100%;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   
   & > span:nth-child(1) {
@@ -107,7 +102,6 @@ export const ContactItem = styled.span`
 
   &:nth-child(3) {
     padding-left: 8px;
-  }
   }
 `;
 

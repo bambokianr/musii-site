@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import HomeContext from './context';
+import Section1Context from './context';
 import { Container, AnimatedBackground, ImageBackground, Description, FirstPhrase, SecondPhrase, ThirdPhrase, CallToAction, StoresBox } from './styles';
 import ImagesCarousel from '../../components/ImagesCarousel';
 import LegendCarousel from '../../components/LegendCarousel';
@@ -36,7 +36,7 @@ const screensCarousel = [
   },
 ]
 
-function Home() {
+function Section1() {
   const [indexFocusedCarousel, setIndexFocusedCarousel] = useState(0);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function Home() {
   }, [indexFocusedCarousel]);
   
   return (
-    <HomeContext.Provider value={{ indexFocusedCarousel, setIndexFocusedCarousel }} >
+    <Section1Context.Provider value={{ indexFocusedCarousel, setIndexFocusedCarousel }} >
       <AnimatedBackground>
         <ImageBackground>  
           <Container>
@@ -55,14 +55,14 @@ function Home() {
               <ThirdPhrase>Conectando pessoas pela música.</ThirdPhrase>
               <LegendCarousel legend={screensCarousel[indexFocusedCarousel].legend} />
               <StoresBox>
-                <CallToAction width="178.2px" src={appStore} alt="Baixar na AppStore" />
-                <CallToAction width="191px" src={googlePlay} alt="Baixar no GooglePlay" />
+                <a href="#" target="_blank"><CallToAction width="178.2px" src={appStore} alt="Baixar na AppStore" /></a>
+                <a href="#" target="_blank"><CallToAction width="191px" src={googlePlay} alt="Baixar no GooglePlay" /></a>
               </StoresBox>
             </Description>
           </Container>
         </ImageBackground>
       </AnimatedBackground>
-    </HomeContext.Provider>
+    </Section1Context.Provider>
   );
 }
-export default Home;
+export default Section1;
