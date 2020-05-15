@@ -3,80 +3,40 @@ import styled from 'styled-components';
 export const Background = styled.div`
   background: #f6f8f6;
   color: #565060;
-  padding: 72px 0 20px;
+  padding: 18px 0 12px;
 `;
 
 export const Container = styled.div`
   padding: 0 24px;
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
   width:100%;
   height: 100%;
   max-width: 1280px;
-
-  div {
-    display: flex;
-    width: 100%;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 `;
 
-export const ColumnBox = styled.div`
+export const Content = styled.div`
   display: flex;
-  flex-direction: column;
-
-  &:nth-child(1) {
-    width: 68%;
-    padding-right: 36px;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  
+  a {
+    cursor: pointer;
+    color: #565060;
   }
+  a:hover {
+    color: #cc78f7;
+  }
+
 `;
 
 export const Logo = styled.img`
-  width: 90px;
-  margin-bottom: 20px;
-`;
-
-export const Text = styled.span`
-  line-height: 1.2em;
-  padding: 4px 0;
-
-  span {
-    color: #771292;
-  }
-`;
-
-export const Button = styled.span`
-  font-weight: 700;
-  cursor: pointer;
-`;
-
-export const Title = styled.span`
-  font-size: 14px;
-  color: #771292;
-  font-weight: 700;
-  padding-top: 20px;
-`;
-
-export const RowBox = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  
-  & > span:nth-child(1) {
-    margin-right: 8px;
-  }
-`; 
-
-export const OtherInfosBox = styled.div`
-    display: flex;
-    justify-content: space-between;
-    margin-top: 44px;
-    font-size: 14px;
-    color: #771292;
-
-    div:nth-child(2) {
-      justify-content: flex-end;
-    }
+  width: 60px;
+  margin: 6px 0;
+  /* margin-bottom: 20px; */
 `;
 
 export const Contact = styled.div`
@@ -104,6 +64,23 @@ export const ContactItem = styled.span`
   }
 `;
 
-export const ContactText = styled.span`
+export const ContactText = styled.a`
   margin-left: 4px;
+`;
+
+export const Copyright = styled.div`
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  color: #771292;
+  align-items: center;
+  span {
+    font-size: 16px;
+    margin-top: 3px;
+    margin-right: 2px;
+  }
+`;
+
+export const Divider = styled.span`
+  padding: 0 12px;
 `;

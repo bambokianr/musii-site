@@ -11,7 +11,7 @@ export const Title = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  padding: 4px 12px 0;
+  padding: 8px 12px 4px;
   color: #771292;
 
   span:nth-child(2) {
@@ -48,7 +48,11 @@ export const Content = styled.div`
   /* animation: ${props => props.isOpen ? 'show-content 0.3s' : ''};
   animation-fill-mode: forwards; */
   padding: 4px 12px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  color: #565060;
+  /* span {
+    font-weight: 700;
+  } */
 
   @keyframes show-content {
       0% {
@@ -58,4 +62,10 @@ export const Content = styled.div`
         opacity: 1;
       }
     }
+`;
+
+export const Answer = styled.span`
+  span {
+    font-weight: 700;
+  }
 `;

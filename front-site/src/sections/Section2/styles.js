@@ -38,10 +38,12 @@ export const SecondPhrase = styled.span`
 `;
 
 export const ThirdPhrase = styled.span`
+  /* width: 70%; */
+  /* text-align: center; */
   color: #cc78f7;
   line-height: 1em;
   font-weight: 600;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   margin: 24px 0 12px;
 `;
 

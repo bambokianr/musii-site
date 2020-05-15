@@ -3,8 +3,8 @@ import waveBackground from '../../assets/wave-background.png';
 
 export const AnimatedBackground = styled.div`
   background: linear-gradient(215deg, #e71474 0%, #481467 78%);
-  /* background-size: 400% 400%;
-  animation: move-grad 8s ease-in-out infinite; */
+  background-size: 400% 400%;
+  animation: move-grad 8s ease-in-out infinite;
   /* position: relative; */
 
   @keyframes move-grad {
@@ -72,6 +72,7 @@ export const SecondPhrase = styled.span`
   font-weight: 600;
   line-height: 1em;
   font-size: 6.0rem;
+  padding-bottom: 10px;
 
   span:nth-child(1) {
     font-weight: 700;

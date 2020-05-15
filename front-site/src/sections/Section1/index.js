@@ -52,7 +52,7 @@ function Section1() {
             <Description>
               <FirstPhrase>Uma <span>música</span>.</FirstPhrase>
               <SecondPhrase>Milhões de <span>conexões</span>.</SecondPhrase>
-              <ThirdPhrase>Conectando pessoas pela música.</ThirdPhrase>
+              {/* <ThirdPhrase>Conectando pessoas pela música.</ThirdPhrase> */}
               <LegendCarousel legend={screensCarousel[indexFocusedCarousel].legend} />
               <StoresBox>
                 <a href="#" target="_blank"><CallToAction width="178.2px" src={appStore} alt="Baixar na AppStore" /></a>

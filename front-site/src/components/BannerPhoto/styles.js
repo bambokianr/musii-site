@@ -12,10 +12,11 @@ export const Container = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   color: ${props => props.color};
-  height: 60vh;
+  height: 70vh;
   padding: 60px 24px;
   display: flex;
   flex-direction: column;
+  /* align-items: flex-end; */
   justify-content: flex-end;
 `;
 

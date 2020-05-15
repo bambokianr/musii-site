@@ -19,8 +19,8 @@ function Header() {
           </AnchorsList>
           
           <SocialMedias>
-            <a href="#" target="_blank"><CircleBox><RiFacebookLine color="#451c5a" /></CircleBox></a>
-            <a href="#" target="_blank"><CircleBox><RiInstagramLine color="#451c5a" /></CircleBox></a>
+            {/* <a href="#" target="_blank"><CircleBox><RiFacebookLine color="#451c5a" /></CircleBox></a> */}
+            <a href="https://www.instagram.com/musii.app/" target="_blank"><CircleBox><RiInstagramLine color="#451c5a" /></CircleBox></a>
             <a href="https://www.linkedin.com/company/musii-app/about/?viewAsMember=true" target="_blank"><CircleBox><RiLinkedinLine color="#451c5a" /></CircleBox></a>
           </SocialMedias>
         </Links>

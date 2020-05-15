@@ -11,7 +11,7 @@ function Section2() {
       <Container>
         <FirstPhrase>A rede social para quem ama música</FirstPhrase>
         <SecondPhrase>Com um feed aberto e através do mapa, vivencie uma maneira única de encontrar pessoas, eventos, lugares, seus artistas favoritos e até novos sons.</SecondPhrase>
-        <ThirdPhrase>Nessa jornada musical, permita-se conhecer</ThirdPhrase>
+        <ThirdPhrase>Sonhamos em formar a maior rede de música do mundo e nessa jornada te ajudaremos a encontrar</ThirdPhrase>
         <CategoriesContainer>
           <CategoriesBox>
             <CategoriesIcon><Icon><img src={musicIcon} alt="Ícone música" /></Icon></CategoriesIcon>
