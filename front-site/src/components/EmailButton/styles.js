@@ -13,6 +13,10 @@ export const Content = styled.span`
     color: #cc78f7;
   }
 
+  a > img {
+    color: #cc78f7;
+  }
+
   &:hover {
     background: #cc78f7;
     
