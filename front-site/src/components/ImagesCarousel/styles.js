@@ -7,7 +7,7 @@ export const Container = styled.div`
 export const Carousel = styled.div`
   position: relative;
   height: 100vh;
-  margin-bottom: 250px;
+  margin-bottom: 260px;
   perspective: 1000px;
 
   div img {

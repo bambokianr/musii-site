@@ -1,7 +1,7 @@
 import React from 'react';
 import { Content } from './styles';
 
-function EmailButton({ email, icon, subject, body }) {
+function EmailButton({ email, subject, body }) {
   const emailHref = email ? `mailto:${email}` : 'mailto:suporte@musii.app';
   const subjectHref = `?subject=${subject}`;
   const bodyHref = body ? `&body=${body}` : '';
