@@ -6,8 +6,8 @@ export const Container = styled.div`
 
 export const Carousel = styled.div`
   position: relative;
-  height: 90vh;
-  margin-bottom: 180px;
+  height: 100vh;
+  margin-bottom: 250px;
   perspective: 1000px;
 
   div img {
@@ -22,7 +22,7 @@ export const MobileMockup = styled.img`
   transform: translate(-50%, -50%);
   z-index: 1000;
   pointer-events: none;
-  width: 330px;
-  margin-left: 26px;
-  margin-top: 111px;
+  width: 357px;
+  margin-left: 25px;
+  margin-top: 170.5px;
 `;

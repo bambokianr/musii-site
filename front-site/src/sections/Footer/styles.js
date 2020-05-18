@@ -89,6 +89,7 @@ export const Copyright = styled.div`
   font-weight: 600;
   color: #771292;
   align-items: center;
+  
   span {
     font-size: 16px;
     margin-top: 3px;

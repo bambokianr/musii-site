@@ -16,23 +16,23 @@ const screensCarousel = [
   {
     id: Math.random(),
     url: img1,
-    legend: 'navegue no mapa e descubra novos sons e pessoas',
+    legend: 'navegue pelo mundo e descubra novos sons, pessoas e lugares',
   },
   
   {
     id: Math.random(),
     url: img2,
-    legend: 'visualize, curta, comente posts e siga novas pessoas',
+    legend: 'ao postar, escolha suas músicas favoritas para acompanhar sua foto, texto ou vídeo',
   },
   {
     id: Math.random(),
     url: img3,
-    legend: 'visite novos perfis e veja os posts de seus amigos no mapa',
+    legend: 'publique um trecho da música que escolheu no formato que quiser e onde preferir',
   },
   {
     id: Math.random(),
     url: img4,
-    legend: 'selecione a música que você deseja para acompanhar seu post',
+    legend: 'encontre seus amigos e descubra o que está rolando de novidade por aí',
   },
 ]
 

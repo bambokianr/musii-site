@@ -34,15 +34,15 @@ function ImagesCarousel({ images, imgAlt })  {
     el.addEventListener('click', () => defineItemFocused());
   });
 
-  useInterval(() => {
-    window.next = function() {
-      var el = document.querySelector(".carousel");
-      var l = M.Carousel.getInstance(el);
-      defineItemFocused();
-      l.next(1);
-    }
-    window.next();
-  }, 10000);
+  // useInterval(() => {
+  //   window.next = function() {
+  //     var el = document.querySelector(".carousel");
+  //     var l = M.Carousel.getInstance(el);
+  //     defineItemFocused();
+  //     l.next(1);
+  //   }
+  //   window.next();
+  // }, 10000);
 
   return (
     <Container onClick={() => console.log('aa')} >
