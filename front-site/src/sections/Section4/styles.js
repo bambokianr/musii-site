@@ -14,7 +14,6 @@ const animate2 = keyframes`
 export const ImageBackground = styled.div`
   position: relative;
   width: 100%;
-  /* height: 82vh; */
   background: url(${background});
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,13 +36,19 @@ export const Container = styled.div`
     margin-top: 30px;
     margin-right: 70px;
     width: 450px;
-    /* width: 900px; */
   }
 `; 
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 1400px) {
+    margin: 0 48px;
+  }
+
+  @media screen and (max-width: 1060px) {
+    text-align: center;
+  }
 `;
 
 export const Title = styled.span`
@@ -55,18 +60,15 @@ export const Title = styled.span`
 export const Text = styled.span`
   font-size: 18px;
   line-height: 1.2em;
-  /* width: 88%; */
   padding: 4px 0;
 
   span {
     color: #cc78f7;
   }
-`;
-
-export const Final = styled.span`
-  font-size: 2.4rem;
-  padding-top: 4px;
-  color: #cc78f7;
+  @media screen and (max-width: 1060px) {
+    width: 70%;
+    margin: 0 auto;
+  }
 `;
 
 export const Subtitle = styled.span`
@@ -86,6 +88,9 @@ export const SpanBox = styled.span`
   border-radius: 8px;
   padding: 4px 16px;
 
+  @media screen and (max-width: 1060px) {
+    margin: 8px;
+  }
 `;
 
 export const Wave1 = styled.div`
@@ -129,7 +134,6 @@ export const Wave3 = styled.div`
   height: 100px;
   background: url(${wave});
   background-size: 1000px 100px;
-
   
   animation: ${animate} 60s linear infinite;
   z-index: 998;
