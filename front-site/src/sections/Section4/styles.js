@@ -28,7 +28,7 @@ export const Container = styled.div`
   margin: 0 auto;
   align-items: center;
   color: #FFF;
-  padding: 100px 24px 230px;
+  padding: 100px 24px 210px;
   display: flex;
   justify-content: space-around;
 
@@ -42,19 +42,27 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 1400px) {
-    margin: 0 48px;
-  }
 
+  @media screen and (max-width: 1400px) {
+    margin: 0 56px;
+  }
   @media screen and (max-width: 1060px) {
     text-align: center;
+    margin: 0;
   }
 `;
 
 export const Title = styled.span`
-  font-size: 4.4rem;
+  font-size: 44px;
   font-weight: 600; 
   padding-bottom: 8px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+  }
 `;
 
 export const Text = styled.span`
@@ -65,23 +73,47 @@ export const Text = styled.span`
   span {
     color: #cc78f7;
   }
+
   @media screen and (max-width: 1060px) {
     width: 70%;
     margin: 0 auto;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 export const Subtitle = styled.span`
-  font-size: 2.8rem;
+  font-size: 28px;
   padding-top: 4px;
   color: #cc78f7;
   font-weight: 600; 
-  padding: 12px 0 20px;
+  padding: 18px 0 22px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 4px;
+    font-size: 24px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
+`;
+
+export const PillarsBox = styled.div`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    margin: 0 auto;
+  }
 `;
 
 export const SpanBox = styled.span`
   color: #cc78f7;
-  font-size: 2.2rem;
+  font-size: 22px;
   border: 0.8px solid #cc78f7;
   margin-right: 16px;
   color: #cc78f7;
@@ -90,6 +122,12 @@ export const SpanBox = styled.span`
 
   @media screen and (max-width: 1060px) {
     margin: 8px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
   }
 `;
 
@@ -101,7 +139,6 @@ export const Wave1 = styled.div`
   height: 100px;
   background: url(${wave});
   background-size: 1000px 100px;
-
   
   animation: ${animate} 60s linear infinite;
   z-index: 1000;
@@ -117,7 +154,6 @@ export const Wave2 = styled.div`
   height: 100px;
   background: url(${wave});
   background-size: 1000px 100px;
-
   
   animation: ${animate2} 30s linear infinite;
   z-index: 999;
