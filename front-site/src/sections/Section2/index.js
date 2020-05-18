@@ -7,7 +7,7 @@ import eventsIcon from '../../assets/events-icon.svg';
 
 function Section2() {
   return (
-    <ImageBackground>
+    <ImageBackground id="funcionalidades">
       <Container>
         <FirstPhrase>A rede social para quem ama música</FirstPhrase>
         <SecondPhrase>Com um feed aberto e através do mapa, vivencie uma maneira única de encontrar pessoas, eventos, lugares, seus artistas favoritos e até novos sons.</SecondPhrase>

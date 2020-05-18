@@ -4,7 +4,7 @@ import logo from '../../assets/logo-mask.png';
 
 function Section4() {
   return (
-    <ImageBackground>
+    <ImageBackground id="sobre-nos">
       <Container>
         <div>
           {/* <img src={logo} alt="Logo Musii" /> */}

@@ -7,15 +7,37 @@ function Header() {
   const [scrollY, setScrollY] = useState(0);
   window.addEventListener('scroll', () => setScrollY(window.scrollY));
 
+  function scrollToAnchor(e, idAnchor) {
+    e.preventDefault();
+    const topSection = document.querySelector(`#${idAnchor}`).offsetTop;
+    let actualOffsetTop = window.scrollY;
+    let direction = (topSection < actualOffsetTop) ? -1 : 1; // 1 -> descer e -1 -> subir
+    let heightHeader = (idAnchor === 'home') ? 0 : 56;
+
+    const scrollY = setInterval(function() {
+      console.log('heightHeader', heightHeader);
+      if(topSection === actualOffsetTop || (direction === 1 && actualOffsetTop > topSection-heightHeader) || (direction === -1 && actualOffsetTop < topSection-heightHeader)) {
+        console.log('clearInterval');
+        clearInterval(scrollY);
+      }
+
+      if(direction === 1 && actualOffsetTop < topSection) window.scrollTo(actualOffsetTop, actualOffsetTop+direction*10);
+      if(direction === -1 && actualOffsetTop > topSection) window.scrollTo(actualOffsetTop+direction*10, actualOffsetTop);
+      
+      actualOffsetTop += direction*10;
+
+    }, 1);
+  }
+
   return (
     <Nav sticky={scrollY > 0}>
       <Container>
         <Logo src={logoHorizontal} alt="Logo Musii" />
         <Links>
           <AnchorsList>
-            <li><a href="#">Home</a></li>  
-            <li><a href="#">Funcionalidades</a></li>  
-            <li><a href="#">Sobre nós</a></li>  
+            <li onClick={e => scrollToAnchor(e, 'home')}><a href="#">Home</a></li>  
+            <li onClick={e => scrollToAnchor(e, 'funcionalidades')}><a href="#">Funcionalidades</a></li>  
+            <li onClick={e => scrollToAnchor(e, 'sobre-nos')}><a href="#">Sobre nós</a></li>  
           </AnchorsList>
           
           <SocialMedias>

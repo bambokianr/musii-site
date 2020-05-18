@@ -46,7 +46,7 @@ function Section1() {
   return (
     <Section1Context.Provider value={{ indexFocusedCarousel, setIndexFocusedCarousel }} >
       <AnimatedBackground>
-        <ImageBackground>  
+        <ImageBackground id="home">  
           <Container>
             <ImagesCarousel images={screensCarousel} imgAlt="telas do aplicativo Musii" />
             <Description>
