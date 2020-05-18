@@ -121,7 +121,7 @@ export const SpanBox = styled.span`
   padding: 4px 16px;
 
   @media screen and (max-width: 1060px) {
-    margin: 8px;
+    margin: 4px;
   }
   @media screen and (max-width: 768px) {
     font-size: 18px;
