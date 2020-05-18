@@ -1,14 +1,14 @@
-import React, { useState, useEffect,  useContext } from 'react';
-import HomeContext from '../../sections/Home/context';
+import React, { useState, useEffect, useContext } from 'react';
+import Section1Context from '../../sections/Section1/context';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import imgMobile from '../../assets/mobile-mockup.png';
-import { useInterval } from '../../utils';
+import { useInterval } from '../../utils/functions';
 
 import { Container, Carousel, MobileMockup } from './styles';
 
 function ImagesCarousel({ images, imgAlt })  {
   const [focusedIndex, setFocusedIndex] = useState(0);
-  const { setIndexFocusedCarousel } = useContext(HomeContext);
+  const { setIndexFocusedCarousel } = useContext(Section1Context);
 
   function defineItemFocused() {
     setTimeout(function() { 
