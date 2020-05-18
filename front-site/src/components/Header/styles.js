@@ -40,7 +40,8 @@ export const AnchorsList = styled.ul`
   align-items: center;
   margin-left: auto;
 
-  li a {
+  li {
+    cursor: pointer;
     color: #fff;
     font-size: 18px; /*16px*/
     font-weight: 600;
@@ -48,7 +49,7 @@ export const AnchorsList = styled.ul`
     margin: 0 12px;
   }
 
-  li a:hover {
+  li:hover {
     color: #cc78f7;
   }
 `;

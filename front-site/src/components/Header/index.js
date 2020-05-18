@@ -35,9 +35,9 @@ function Header() {
         <Logo src={logoHorizontal} alt="Logo Musii" />
         <Links>
           <AnchorsList>
-            <li onClick={e => scrollToAnchor(e, 'home')}><a href="#">Home</a></li>  
-            <li onClick={e => scrollToAnchor(e, 'funcionalidades')}><a href="#">Funcionalidades</a></li>  
-            <li onClick={e => scrollToAnchor(e, 'sobre-nos')}><a href="#">Sobre nós</a></li>  
+            <li onClick={e => scrollToAnchor(e, 'home')}>Home</li>  
+            <li onClick={e => scrollToAnchor(e, 'funcionalidades')}>Funcionalidades</li>  
+            <li onClick={e => scrollToAnchor(e, 'sobre-nos')}>Sobre nós</li>  
           </AnchorsList>
           
           <SocialMedias>
