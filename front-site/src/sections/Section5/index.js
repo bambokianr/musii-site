@@ -24,7 +24,7 @@ function Section5() {
             <EmailButton icon={otherIcon} subject="Outros" />
           </div>
           <Subtitle>Perguntas frequentes</Subtitle>
-          {faq.map(obj => <ExpansionPanel title={obj.title} content={obj.content} />)}
+          {faq.map((obj, idx) => <ExpansionPanel key={idx} title={obj.title} content={obj.content} />)}
         </Content>
       </Container>
     </Background>
