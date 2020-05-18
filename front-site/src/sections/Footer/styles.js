@@ -15,6 +15,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  @media screen and (max-width: 1400px) {
+    padding: 0 72px;
+  }
 `;
 
 export const Content = styled.div`
@@ -43,6 +47,10 @@ export const Contact = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  
+  @media screen and (max-width: 1060px) {
+    flex-direction: column;
+  }
 `;
 
 export const ContactItem = styled.span`
@@ -61,6 +69,13 @@ export const ContactItem = styled.span`
 
   &:nth-child(3) {
     padding-left: 8px;
+  }
+  
+  @media screen and (max-width: 1060px) {
+    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+      border-style: hidden;
+      padding: 0;
+    }
   }
 `;
 

@@ -150,7 +150,6 @@ export const Wave4 = styled.div`
   height: 100px;
   background: url(${wave});
   background-size: 1000px 100px;
-
   
   animation: ${animate2} 10s linear infinite;
   z-index: 997;

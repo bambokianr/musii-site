@@ -25,28 +25,51 @@ export const FirstPhrase = styled.span`
   color: #771292;
   font-weight: 600;
   line-height: 1em;
-  font-size: 4.4rem;
+  font-size: 44px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+  }
 `;
 
 export const SecondPhrase = styled.span`
   width: 65%;
   color: #565060;
   line-height: 1em;
-  font-size: 2rem;
+  font-size: 20px;
   text-align: center;
   margin: 16px 0;
+  
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const ThirdPhrase = styled.span`
   color: #cc78f7;
   line-height: 1em;
   font-weight: 600;
-  font-size: 2.6rem;
+  font-size: 26px;
   margin: 24px 0 12px;
 
   @media screen and (max-width: 1280px) {
     width: 80%;
+  }
+  @media screen and (max-width: 1060px) {
+    margin-bottom: 0px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
   }
 `;
 
@@ -108,7 +131,7 @@ export const CategoriesBox = styled.div`
     cursor: default;
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 
     & > h3 {
       display: none;
@@ -133,6 +156,14 @@ export const CategoriesBox = styled.div`
       display: block;
       top: 76px;
       opacity: 1;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    margin-bottom: 12px;
+    
+    &:nth-child(1) {
+      margin-bottom: -2px;
     }
   }
 `;
@@ -176,7 +207,7 @@ export const CategoriesContent = styled.div`
     font-size: 16px;
     font-weight: 700;
     color: #cc78f7;
-    font-size: 2rem;
+    font-size: 20px;
     line-height: 0;
   }
 
@@ -188,6 +219,10 @@ export const CategoriesContent = styled.div`
     margin-top: 16px;
     padding: 0;
     color: #565060;
+   
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 
   @media screen and (max-width: 1060px) { 
