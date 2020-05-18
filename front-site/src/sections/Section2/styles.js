@@ -18,6 +18,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 `;
 
 export const FirstPhrase = styled.span`
@@ -38,19 +39,27 @@ export const SecondPhrase = styled.span`
 `;
 
 export const ThirdPhrase = styled.span`
-  /* width: 70%; */
-  /* text-align: center; */
   color: #cc78f7;
   line-height: 1em;
   font-weight: 600;
   font-size: 2.6rem;
   margin: 24px 0 12px;
+
+  @media screen and (max-width: 1280px) {
+    width: 80%;
+  }
 `;
 
 export const CategoriesContainer = styled.div`
   width: 60%;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 1060px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+  }
 `;
 
 export const CategoriesBox = styled.div`
@@ -80,7 +89,6 @@ export const CategoriesBox = styled.div`
     width: 80px;
     height: 80px;
     border-radius: 20%;
-    /* border-radius: 50%; */
     background: rgb(255, 255, 255, 0.2);
   }
 
@@ -94,6 +102,38 @@ export const CategoriesBox = styled.div`
     display: block;
     top: 76px;
     opacity: 1;
+  }
+
+  @media screen and (max-width: 1060px) { 
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+
+    & > h3 {
+      display: none;
+    }
+
+    div:nth-child(1) {
+      top: 12px;
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 80px;
+      border-radius: 20%;
+      background: rgb(255, 255, 255, 0.2);
+    }
+
+    div:nth-child(1) span img {
+      color: #4d1d69;
+      height: 38px;
+      margin-top: 10px;
+    }
+   
+    div:nth-child(3) {
+      display: block;
+      top: 76px;
+      opacity: 1;
+    }
   }
 `;
 
@@ -148,5 +188,11 @@ export const CategoriesContent = styled.div`
     margin-top: 16px;
     padding: 0;
     color: #565060;
+  }
+
+  @media screen and (max-width: 1060px) { 
+    p {
+      width: 255px;
+    }
   }
 `;

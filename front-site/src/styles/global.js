@@ -45,15 +45,15 @@ export default createGlobalStyle`
 
   /* Tablets and larger smartphones */
   @media screen and (max-width: 768px) {
-    html {
+    /* html {
       text-align: center;
-    }
+    } */
   }
 
   /* Smaller smartphones */
   @media screen and (max-width: 480px) {
-    html {
+    /* html {
       font-size: 45%;
-    }
+    } */
   }
 `; 
