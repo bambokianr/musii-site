@@ -3,12 +3,10 @@ import { Background, Container, Content, Title, Subtitle, BoxButtons } from './s
 import { faq } from '../../utils/contants';
 import ExpansionPanel from './../../components/ExpansionPanel';
 import EmailButton from '../../components/EmailButton';
-
 import errorIcon from '../../assets/error-icon.svg';
 import feedbackIcon from '../../assets/feedback-icon.svg';
 import spamIcon from '../../assets/spam-icon.svg';
 import otherIcon from '../../assets/other-icon.svg';
-
 
 function Section5() {
   return (

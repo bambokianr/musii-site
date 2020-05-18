@@ -24,4 +24,13 @@ export const Content = styled.span`
       color: #f6f8f6;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    margin: 4px 0;
+  }
+  @media screen and (max-width: 480px) {
+    a {
+      font-size: 14px;
+    }
+  }
 `;
