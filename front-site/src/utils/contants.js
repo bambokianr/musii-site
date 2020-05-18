@@ -9,7 +9,7 @@ export const faq = [
         Pra fazer um post no <span>musii</span> é bem fácil!<br/>
         Basta <span>segurar o dedo</span> no mapa onde você quer <span>deixar sua marca</span> e selecionar a opção de fazer uma <span>foto</span>, um <span>vídeo</span> ou um <span>texto</span> ;)<br/>
         Depois que você escolheu <span>como</span> quer passar <span>sua mensagem</span>, é só escolher uma <span>música</span> para acompanhar seu post.<br/>
-        Caso não encontrou a música que queria, você pode nos ajudar mandando um e-mail para suporte@musii.app pra gente entender o que aconteceu e tentar te auxiliar :)<br/>
+        Caso não tenha encontrado a música que queria, você pode nos ajudar mandando um e-mail para suporte@musii.app pra gente entender o que aconteceu e tentar te auxiliar :)<br/>
       </Answer>
   },
   {
@@ -45,7 +45,7 @@ export const faq = [
 export const banners = [
   {
     title: 'A rede social da música',
-    description: 'Somos uma rede formada por pessoas que, assim como você, amam a música e gostam de viver ela o tempo inteiro.',
+    description: 'Somos uma rede formada por pessoas que, assim como você, amam a música e gostam de vivê-la o tempo inteiro.',
     url: require('../assets/section3-1.png'),
     color: '#FFF',
   },

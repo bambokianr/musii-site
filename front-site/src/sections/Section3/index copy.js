@@ -9,7 +9,7 @@ import { useInterval } from '../../utils/functions';
 const banners = [
   {
     title: 'A rede social da música',
-    description: 'Somos uma rede formada por pessoas que, assim como você, amam a música e gostam de viver ela o tempo inteiro.',
+    description: 'Somos uma rede formada por pessoas que, assim como você, amam a música e gostam de vivê-la o tempo inteiro.',
     url: background1,
     color: '#FFF',
   },

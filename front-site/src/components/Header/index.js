@@ -12,7 +12,7 @@ function Header() {
     const topSection = document.querySelector(`#${idAnchor}`).offsetTop;
     let actualOffsetTop = window.scrollY;
     let direction = (topSection < actualOffsetTop) ? -1 : 1; // 1 -> descer e -1 -> subir
-    let heightHeader = (idAnchor === 'home') ? 0 : 56;
+    let heightHeader = (idAnchor === 'home') ? 0 : 58;
 
     const scrollY = setInterval(function() {
       console.log('heightHeader', heightHeader);
