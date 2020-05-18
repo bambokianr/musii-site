@@ -1,6 +1,5 @@
 import React from 'react';
 import { ImageBackground, Container, FirstPhrase, SecondPhrase, ThirdPhrase, CategoriesContainer, CategoriesBox, CategoriesIcon, Icon, CategoriesContent } from './styles';
-
 import musicIcon from '../../assets/music-icon.svg';
 import peopleIcon from '../../assets/people-icon.svg';
 import eventsIcon from '../../assets/events-icon.svg';
