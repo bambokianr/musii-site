@@ -116,9 +116,11 @@ export const CategoriesBox = styled.div`
   }
 
   &:hover div:nth-child(1) span img {
-    color: #4d1d69;
-    height: 38px;
-    margin-top: 10px;
+    /* color: #4d1d69; */
+    /* height: 38px; */
+    /* margin-top: 10px; */
+    width: 70px;
+    margin-top: 8px;
   }
 
   &:hover div:nth-child(3) {
@@ -148,8 +150,10 @@ export const CategoriesBox = styled.div`
 
     div:nth-child(1) span img {
       color: #4d1d69;
-      height: 38px;
-      margin-top: 10px;
+      /* height: 38px; */
+      /* width: 100%; */
+      width: 70px;
+      margin-top: 8px;
     }
    
     div:nth-child(3) {
@@ -187,7 +191,7 @@ export const Icon = styled.span`
   transform: 5s;
 
   img {
-    height: 80px;
+    width: 100%;
   }
 `;
 

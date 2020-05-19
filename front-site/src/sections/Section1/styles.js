@@ -40,7 +40,7 @@ export const Container = styled.div`
   /* display: flex; */
 
   @media screen and (max-width: 1300px) {
-    /* height: 100%; */
+    /* height: 100%;  */
     flex-direction: column;
     text-align: center;
   }
