@@ -5,7 +5,6 @@ export const AnimatedBackground = styled.div`
   background: linear-gradient(215deg, #e71474 0%, #481467 78%);
   background-size: 400% 400%;
   animation: move-grad 8s ease-in-out infinite;
-  /* position: relative; */
 
   @keyframes move-grad {
     0% {
@@ -36,35 +35,45 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   color: #FFF;
-  
-  justify-content: space-between;
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* display: flex; */
+
+  @media screen and (max-width: 1300px) {
+    /* height: 100%; */
+    flex-direction: column;
+    text-align: center;
+  }
 `; 
 
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1300px) {
+    /* margin-top: -80px; */
+    margin-top: -55px;
+  }
 `;
 
 export const FirstPhrase = styled.span`
   font-weight: 600;
   line-height: 1em;
-  font-size: 7.2rem;
+  font-size: 72px;
 
   span:nth-child(1) {
     font-weight: 700;
     font-size: 1.2em;
   }
 
-  @media screen and (max-width: 1280px) {
-    font-size: 6.4rem;
+  @media screen and (max-width: 1500px) {
+    font-size: 60px;
   }
-
-  @media screen and (max-width: 768px) {
-    font-size: 5.6rem;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 4.8rem;
+  /* @media screen and (max-width: 1300px) {
+    font-size: 56px;
+  } */
+  @media screen and (max-width: 1300px) {
+    font-size: 48px;
   }
 `;
 
@@ -79,35 +88,14 @@ export const SecondPhrase = styled.span`
     font-size: 1.2em;
   }
 
-  @media screen and (max-width: 1280px) {
-    font-size: 5.2rem;
+  @media screen and (max-width: 1500px) {
+    font-size: 52px;
   }
-
-  @media screen and (max-width: 768px) {
-    font-size: 4.4rem;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 3.6rem;
-  }
-`;
-
-export const ThirdPhrase = styled.span`
-  font-weight: 300;
-  line-height: 1.2em;
-  font-size: 3.6rem;
-  padding: 12px 0;
-
-  @media screen and (max-width: 1280px) {
-    font-size: 3.2rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 2.8rem;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 2.4rem;
+  /* @media screen and (max-width: 1300px) {
+    font-size: 48px;
+  } */
+  @media screen and (max-width: 1300px) {
+    font-size: 40px;
   }
 `;
 
@@ -121,6 +109,11 @@ export const StoresBox = styled.div`
 
   a:hover {
     opacity: 1;
+  }
+
+  @media screen and (max-width: 1300px) {
+    display: flex;
+    justify-content: center;
   }
 `;
 

@@ -45,7 +45,7 @@ function ImagesCarousel({ images, imgAlt })  {
   // }, 10000);
 
   return (
-    <Container onClick={() => console.log('aa')} >
+    <Container onClick={() => console.log('ImagesCarousel')} >
       <Carousel className="carousel">
       {images.map(image => (
         <div key={image.id} className="carousel-item"><img src={image.url} alt={imgAlt} /></div>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin-top: 20px;
+  margin-top: 12px;
 `; 
 
 export const Content = styled.span`
@@ -11,16 +11,7 @@ export const Content = styled.span`
   border-radius: 8px;
   padding: 4px 12px;
 
-  span {
-    animation: show-up 0.5s ease-in;
-  }
-
-  @keyframes show-up {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  @media screen and (max-width: 1500px) {
+    font-size: 14px;
   }
 `;
