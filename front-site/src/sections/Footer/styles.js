@@ -23,6 +23,10 @@ export const Container = styled.div`
   @media screen and (max-width:1060px) {
     flex-direction: column;
   }
+  @media screen and (max-width: 480px) {
+    align-items: flex-start;
+    padding: 12px 48px;
+  }
 `;
 
 export const Content = styled.div`
@@ -45,6 +49,11 @@ export const Content = styled.div`
     justify-content: space-between;
     align-items: flex-end;
   }
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const Logo = styled.img`
@@ -65,6 +74,11 @@ export const Contact = styled.div`
     flex-direction: column;
     margin-left: -4px;
   }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
 `;
 
 export const Other = styled.div`
@@ -80,6 +94,9 @@ export const Other = styled.div`
       border-bottom: 1px solid #77129282;
       padding-bottom: 6px;
     }
+  }
+  @media screen and (max-width: 480px) {
+    align-items: flex-start;
   }
 `;
 
