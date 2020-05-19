@@ -2,32 +2,32 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 50%;
+
+  @media screen and (max-width: 1300px) {
+    margin-bottom: -130px;
+  }
+  @media screen and (max-width: 1080px) {
+    margin-bottom: 0;
+  }
 `; 
 
 export const Carousel = styled.div`
   position: relative;
-  height: 100vh;
-  margin-bottom: 260px;
+  height: 110vh;
   perspective: 1000px;
-  
-  margin-right: 40px;
-  margin-left: -60px;
-
-  @media screen and (max-width: 1400px) {
-    margin-right: 10px;
-    margin-left: -30px; 
-  }
-  @media screen and (max-width: 1350px) {
-    margin-right: 2px;
-    margin-left: -10px; 
-  }
+  margin: 0 40px 260px -60px;
 
   div img {
     width: 250px !important;
   } 
 
+  @media screen and (max-width: 1400px) {
+    margin-right: 10px;
+    margin-left: -30px; 
+  }
+
   @media screen and (max-width: 1350px) {
-    margin-bottom: 190px;
+    margin: 0 2px 190px -10px;
 
     div img {
       width: 220px !important;
@@ -35,8 +35,24 @@ export const Carousel = styled.div`
   }
 
   @media screen and (max-width: 1300px) {
-    /* margin: -200px 24px 0 0; */
-    margin: -300px 50px 0 -10px;
+    /* margin: -300px 50px 0 -10px; */
+    margin: -300px 0 0 0;
+
+    div img {
+      width: 190px !important;
+    } 
+  }
+
+  @media screen and (max-width: 1080px) {
+    margin: 0;
+    /* height: 100%; */
+    height: 0px;
+  }
+
+  @media screen and (max-width: 480px) {
+    div img {
+      width: 170px !important;
+    } 
   }
 `;
 
@@ -55,5 +71,30 @@ export const MobileMockup = styled.img`
     width: 313px;
     margin-left: 10.5px;
     margin-top: 138.5px;
+  }
+  @media screen and (max-width: 1300px) {
+    width: 269px;
+    margin-left: -1px;
+    margin-top: 105px;
+  }
+  @media screen and (max-width: 1080px) {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 480px) {
+    width: 242px;
+  }
+`;
+
+export const MobileContainer = styled.div`
+  /* padding-left: 20px; */
+  /* padding-top: 390.5px; */
+  img {
+    margin-top: -204px;
+  }
+  @media screen and (max-width: 480px) {
+    img {
+      margin-top: -185px;
+    }
   }
 `;

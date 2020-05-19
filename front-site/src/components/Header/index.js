@@ -19,9 +19,9 @@ function Header() {
     let heightHeader = (idAnchor === 'home') ? 0 : 58;
 
     const scrollY = setInterval(function() {
-      console.log('heightHeader', heightHeader);
+      // console.log('heightHeader', heightHeader);
       if(topSection === actualOffsetTop || (direction === 1 && actualOffsetTop > topSection-heightHeader) || (direction === -1 && actualOffsetTop < topSection-heightHeader)) {
-        console.log('clearInterval');
+        // console.log('clearInterval');
         clearInterval(scrollY);
       }
 

@@ -25,8 +25,8 @@ function Section1() {
               <SecondPhrase>Milhões de <span>conexões</span>.</SecondPhrase>
               <LegendCarousel legend={screensCarousel[indexFocusedCarousel].legend} />
               <StoresBox>
-                <a href="#" target="_blank"><CallToAction width="177px" src={appStore} alt="Baixar na AppStore" /></a>
-                <a href="#" target="_blank"><CallToAction width="191px" src={googlePlay} alt="Baixar no GooglePlay" /></a>
+                <a href="#" target="_blank"><CallToAction id="ios" src={appStore} alt="Baixar na AppStore" /></a>
+                <a href="#" target="_blank"><CallToAction id="android" src={googlePlay} alt="Baixar no GooglePlay" /></a>
               </StoresBox>
             </Description>
           </Container>

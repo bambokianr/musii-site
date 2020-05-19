@@ -36,11 +36,8 @@ export const Container = styled.div`
   align-items: center;
   color: #FFF;
   justify-content: center;
-  /* justify-content: space-between; */
-  /* display: flex; */
 
   @media screen and (max-width: 1300px) {
-    /* height: 100%;  */
     flex-direction: column;
     text-align: center;
   }
@@ -50,9 +47,12 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 1300px) {
-    /* margin-top: -80px; */
-    margin-top: -55px;
+  @media screen and (max-width: 1080px) {
+    position: relative;
+    top: 240px;
+  }
+  @media screen and (max-width: 480px) {
+    top: 225px;
   }
 `;
 
@@ -69,11 +69,11 @@ export const FirstPhrase = styled.span`
   @media screen and (max-width: 1500px) {
     font-size: 60px;
   }
-  /* @media screen and (max-width: 1300px) {
-    font-size: 56px;
-  } */
   @media screen and (max-width: 1300px) {
     font-size: 48px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 36px;
   }
 `;
 
@@ -91,11 +91,11 @@ export const SecondPhrase = styled.span`
   @media screen and (max-width: 1500px) {
     font-size: 52px;
   }
-  /* @media screen and (max-width: 1300px) {
-    font-size: 48px;
-  } */
   @media screen and (max-width: 1300px) {
     font-size: 40px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
   }
 `;
 
@@ -115,10 +115,23 @@ export const StoresBox = styled.div`
     display: flex;
     justify-content: center;
   }
+  @media screen and (max-width: 480px) {
+    align-items: center;
+  }
 `;
 
 export const CallToAction = styled.img`
   cursor: pointer;
   padding-top: 36px;
   padding-right: 16px;
+  width: ${props => props.id ==='ios' ? '177px' : '191px'};
+
+  
+  @media screen and (max-width: 1300px) {
+    padding: 36px 8px 0;
+  }
+  @media screen and (max-width: 480px) {
+    padding-top: 24px;
+    width: ${props => props.id ==='ios' ? '145px' : '155px'};
+  }
 `;
