@@ -1,6 +1,29 @@
 import React from 'react';
 import { Answer } from '../components/ExpansionPanel/styles';
 
+export const screensCarousel = [
+  {
+    id: Math.random(),
+    url: require('../assets/img1.png'),
+    legend: 'navegue pelo mundo e descubra novos sons, pessoas e lugares',
+  },
+  {
+    id: Math.random(),
+    url: require('../assets/img2.png'),
+    legend: 'ao postar, escolha suas músicas favoritas para acompanhar sua foto, texto ou vídeo',
+  },
+  {
+    id: Math.random(),
+    url: require('../assets/img3.png'),
+    legend: 'publique um trecho da música que escolheu no formato que quiser e onde preferir',
+  },
+  {
+    id: Math.random(),
+    url: require('../assets/img4.png'),
+    legend: 'encontre seus amigos e descubra o que está rolando de novidade por aí',
+  },
+]
+
 export const faq = [
   {
     title: 'Como eu faço um post no musii?',

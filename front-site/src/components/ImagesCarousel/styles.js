@@ -24,5 +24,5 @@ export const MobileMockup = styled.img`
   pointer-events: none;
   width: 357px;
   margin-left: 25px;
-  margin-top: 170.5px;
+  margin-top: 171.5px;
 `;
