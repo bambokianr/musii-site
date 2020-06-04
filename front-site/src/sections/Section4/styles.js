@@ -142,7 +142,7 @@ export const Wave1 = styled.div`
   background-size: 1000px 100px;
   
   animation: ${animate} 60s linear infinite;
-  z-index: 1000;
+  z-index: 10;
   opacity: 1;
   animation-delay: 0s;
 `;
@@ -157,7 +157,7 @@ export const Wave2 = styled.div`
   background-size: 1000px 100px;
   
   animation: ${animate2} 30s linear infinite;
-  z-index: 999;
+  z-index: 9;
   opacity: 0.5;
   animation-delay: -10s;
   bottom: 10px;
@@ -173,7 +173,7 @@ export const Wave3 = styled.div`
   background-size: 1000px 100px;
   
   animation: ${animate} 60s linear infinite;
-  z-index: 998;
+  z-index: 8;
   opacity: 0.2;
   animation-delay: -4s;
   bottom: 15px;
@@ -189,7 +189,7 @@ export const Wave4 = styled.div`
   background-size: 1000px 100px;
   
   animation: ${animate2} 10s linear infinite;
-  z-index: 997;
+  z-index: 7;
   opacity: 0.7;
   animation-delay: -10s;
   bottom: 20px;

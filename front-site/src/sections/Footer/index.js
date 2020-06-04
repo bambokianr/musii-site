@@ -12,8 +12,8 @@ function Footer() {
         <Content>
           <Contact>
             <ContactItem><MdEmail color="#771292" /><ContactText href="mailto:contato@musii.app">contato@musii.app</ContactText></ContactItem>
-            <ContactItem><FaApple color="#771292" /><ContactText href="#" target="_blank">Baixar na App Store</ContactText></ContactItem>
-            <ContactItem><FaGooglePlay color="#771292" /><ContactText href="#" target="_blank">Baixar no Gogle Play</ContactText></ContactItem>
+            <ContactItem><FaApple color="#771292" /><ContactText>Baixar na App Store</ContactText></ContactItem>
+            <ContactItem><FaGooglePlay color="#771292" /><ContactText href="https://play.google.com/store/apps/details?id=com.musii.musii" target="_blank">Baixar no Gogle Play</ContactText></ContactItem>
           </Contact>
           <Other>
             <Divider>-</Divider>
