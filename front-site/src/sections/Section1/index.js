@@ -8,17 +8,18 @@ import appStore from '../../assets/appstore.png';
 import appStoretemp from '../../assets/appstore_embreve.png';
 import googlePlay from '../../assets/googleplay.png';
 
-function Section1() {
+function Section1({ isMobileScreen }) {
   const [indexFocusedCarousel, setIndexFocusedCarousel] = useState(0);
 
   useEffect(() => {
     // console.log('HOME', indexFocusedCarousel);
-  }, [indexFocusedCarousel]);
-  
+    console.log('isMobileScreen', isMobileScreen);
+  }, [isMobileScreen, indexFocusedCarousel]);
+
   return (
     <Section1Context.Provider value={{ indexFocusedCarousel, setIndexFocusedCarousel }} >
-      <AnimatedBackground>
-        <ImageBackground id="home">  
+      <AnimatedBackground isMobileScreen={isMobileScreen}>
+        <ImageBackground isMobileScreen={isMobileScreen} id="home">  
           <Container>
             <ImagesCarousel images={screensCarousel} imgAlt="telas do aplicativo Musii" />
             <Description>

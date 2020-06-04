@@ -2,20 +2,14 @@ import styled from 'styled-components';
 import waveBackground from '../../assets/wave-background.png';
 
 export const AnimatedBackground = styled.div`
-  background: linear-gradient(215deg, #e71474 0%, #481467 78%);
+  background: ${props => props.isMobileScreen ? '#771292' : 'linear-gradient(215deg, #e71474 0%, #481467 78%)'};
   background-size: 400% 400%;
-  animation: move-grad 8s ease-in-out infinite;
+  animation: ${props => props.isMobileScreen ? '' : 'move-grad 8s ease-in-out infinite'};
 
   @keyframes move-grad {
-    0% {
-      background-position: 0 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0 50%;
-    }
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
   }
 `; 
 
@@ -23,7 +17,7 @@ export const ImageBackground = styled.div`
   background: url(${waveBackground});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: ${props => props.isMobileScreen ? 'right 35% bottom 45%' : 'center center'};
   background-attachment: fixed;
 `; 
 
