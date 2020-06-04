@@ -5,6 +5,7 @@ import { screensCarousel } from '../../utils/contants';
 import ImagesCarousel from '../../components/ImagesCarousel';
 import LegendCarousel from '../../components/LegendCarousel';
 import appStore from '../../assets/appstore.png';
+import appStoretemp from '../../assets/appstore_embreve.png';
 import googlePlay from '../../assets/googleplay.png';
 
 function Section1() {
@@ -25,8 +26,8 @@ function Section1() {
               <SecondPhrase>Milhões de <span>conexões</span>.</SecondPhrase>
               <LegendCarousel legend={screensCarousel[indexFocusedCarousel].legend} />
               <StoresBox>
-                <a href="#" target="_blank"><CallToAction id="ios" src={appStore} alt="Baixar na AppStore" /></a>
-                <a href="#" target="_blank"><CallToAction id="android" src={googlePlay} alt="Baixar no GooglePlay" /></a>
+                <a><CallToAction id="ios" src={appStoretemp} alt="Baixar na AppStore" /></a>
+                <a href="https://play.google.com/store/apps/details?id=com.musii.musii" target="_blank"><CallToAction id="android" src={googlePlay} alt="Baixar no GooglePlay" /></a>
               </StoresBox>
             </Description>
           </Container>

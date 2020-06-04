@@ -64,7 +64,7 @@ export const AnchorsList = styled.ul`
   }
 
   li:hover {
-    color: #cc78f7;
+    /* color: #cc78f7; */
   }
 
   @media screen and (max-width: 768px) {

@@ -103,14 +103,6 @@ export const StoresBox = styled.div`
   display: flex;
   align-items: center;
 
-  a {
-    opacity: 0.8;
-  }
-
-  a:hover {
-    opacity: 1;
-  }
-
   @media screen and (max-width: 1300px) {
     display: flex;
     justify-content: center;
@@ -121,11 +113,15 @@ export const StoresBox = styled.div`
 `;
 
 export const CallToAction = styled.img`
-  cursor: pointer;
+  cursor: ${props => props.id ==='ios' ? 'not-allowed' : 'pointer'};
   padding-top: 36px;
   padding-right: 16px;
   width: ${props => props.id ==='ios' ? '177px' : '191px'};
+  opacity: ${props => props.id ==='ios' ? '1' : '0.8'};
 
+  &:hover {
+    opacity: 1;
+  }
   
   @media screen and (max-width: 1300px) {
     padding: 36px 8px 0;
