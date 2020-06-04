@@ -13,7 +13,6 @@ function Section1({ isMobileScreen }) {
 
   useEffect(() => {
     // console.log('HOME', indexFocusedCarousel);
-    console.log('isMobileScreen', isMobileScreen);
   }, [isMobileScreen, indexFocusedCarousel]);
 
   return (

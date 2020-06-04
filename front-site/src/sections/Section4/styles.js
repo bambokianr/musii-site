@@ -82,6 +82,7 @@ export const Text = styled.span`
     font-size: 16px;
   }
   @media screen and (max-width: 480px) {
+    width: 85%;
     font-size: 14px;
   }
 `;
@@ -127,7 +128,7 @@ export const SpanBox = styled.span`
     font-size: 18px;
   }
   @media screen and (max-width: 480px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 

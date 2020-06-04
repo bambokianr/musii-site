@@ -26,7 +26,7 @@ export const Container = styled.div`
   }
   @media screen and (max-width: 760px) {
     text-align: center;
-    padding: 30px 76px;
+    align-items: center;
     height: 40vh;
   }
 `;
