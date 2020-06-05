@@ -17,7 +17,7 @@ function Footer() {
           </Contact>
           <Other>
             <Divider>-</Divider>
-            <a href="#">Política de privacidade</a>
+            <a href="https://musii-uploads.s3.amazonaws.com/Poli%CC%81tica+de+Protec%CC%A7a%CC%83o+de+Dados_Musii.pdf" target="_blank">Política de privacidade</a>
             <Divider>-</Divider>
             <Copyright><span>©</span> 2020 Musii</Copyright>
           </Other>

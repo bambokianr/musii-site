@@ -53,7 +53,7 @@ export const Title = styled.div`
 `;
 
 export const Content = styled.div`
-  padding: 4px 12px;
+  padding: 4px 12px 20px;
   font-size: 1.6rem;
   color: #565060;
 

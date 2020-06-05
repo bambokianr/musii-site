@@ -40,7 +40,7 @@ function Header() {
 
   return (
     <Nav sticky={scrollY > 0}>
-      <Container >
+      <Container>
         <Logo src={logoHorizontal} alt="Logo Musii" />
         <MenuSection mobileOn={mobileOn}>
           <MenuToggle mobileOn={mobileOn} onClick={handleMobileMenu}>

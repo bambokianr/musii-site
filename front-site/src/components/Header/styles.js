@@ -43,7 +43,10 @@ export const Links = styled.div`
   align-items: center;
   
   @media screen and (max-width: 768px) {
-    display: ${props => props.mobileOn ? 'block' : 'none'};
+    display: ${props => props.mobileOn ? 'flex' : 'none'};
+    flex-direction: ${props => props.mobileOn ? 'column' : ''};
+    height: ${props => props.mobileOn ? '100%' : ''};
+    justify-content: ${props => props.mobileOn ? 'center' : ''};
   }
 `;
 
@@ -59,12 +62,7 @@ export const AnchorsList = styled.ul`
     color: #fff;
     font-size: 18px;
     font-weight: 600;
-    padding: 8px 12px;
     margin: 0 12px;
-  }
-
-  li:hover {
-    /* color: #cc78f7; */
   }
 
   @media screen and (max-width: 768px) {
@@ -73,11 +71,10 @@ export const AnchorsList = styled.ul`
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-
-    height: 94vh;
+    height: 30vh;
 
     li {
-      font-size: 32px;
+      font-size: 28px;
     }
   }
 `;
@@ -89,6 +86,9 @@ export const SocialMedias = styled.div`
   border-left: 1px solid #fff;
   @media screen and (max-width: 768px) {
     border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -124,8 +124,9 @@ export const MenuToggle = styled.div`
   @media screen and (max-width: 768px) {
     cursor: pointer;
     width: 32px;
-    margin-top: ${props => props.mobileOn ? '13px' : '0'};
-    margin-right: ${props => props.mobileOn ? '39px' : '24px'};
+    margin-top: ${props => props.mobileOn ? '10px' : '0'}; 
+    /* margin-top: ${props => props.mobileOn ? '13px' : '0'};  */
+    margin-right: ${props => props.mobileOn ? '26px' : '24px'};
     position: ${props => props.mobileOn ? 'absolute' : ''};
     right: ${props => props.mobileOn ? '0' : ''};
   }
@@ -140,9 +141,9 @@ export const One = styled.div`
     margin: 6px auto;
     transition-duration: 0.3s;
     transform: ${props => props.mobileOn ? 'rotate(45deg) translate(7px, 7px)' : ''};
-
   }
 `;
+
 export const Two = styled.div`
   @media screen and (max-width: 768px) {
     background:  #fff;
@@ -152,9 +153,9 @@ export const Two = styled.div`
     margin: 6px auto;
     transition-duration: 0.3s;
     opacity: ${props => props.mobileOn ? '0' : ''};
-
   }
 `;
+
 export const Three = styled.div`
   @media screen and (max-width: 768px) {
     background:  #fff;
@@ -166,4 +167,3 @@ export const Three = styled.div`
     transform: ${props => props.mobileOn ? 'rotate(-45deg) translate(5px,-6.5px)' : ''};
   }
 `;
-
