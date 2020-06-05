@@ -55,8 +55,8 @@ function Header() {
               <li onClick={e => scrollToAnchor(e, 'sobre-nos')}>Sobre nós</li>  
             </AnchorsList>
             <SocialMedias>
-              <a href="https://www.instagram.com/musii.app/" target="_blank"><CircleBox><RiInstagramLine color="#451c5a" /></CircleBox></a>
-              <a href="https://www.linkedin.com/company/musii-app/about/?viewAsMember=true" target="_blank"><CircleBox><RiLinkedinLine color="#451c5a" /></CircleBox></a>
+              <a href="https://www.instagram.com/musii.app/" target="_blank" rel="noopener noreferrer"><CircleBox><RiInstagramLine color="#451c5a" /></CircleBox></a>
+              <a href="https://www.linkedin.com/company/musii-app/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer"><CircleBox><RiLinkedinLine color="#451c5a" /></CircleBox></a>
             </SocialMedias>
           </Links>
         </MenuSection>

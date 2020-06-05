@@ -63,6 +63,7 @@ export const AnchorsList = styled.ul`
     font-size: 18px;
     font-weight: 600;
     margin: 0 12px;
+    padding: 8px 12px;
   }
 
   @media screen and (max-width: 768px) {
@@ -75,6 +76,7 @@ export const AnchorsList = styled.ul`
 
     li {
       font-size: 28px;
+      padding: 0;
     }
   }
 `;
@@ -84,6 +86,7 @@ export const SocialMedias = styled.div`
   align-items: center;
   padding: 0 16px;
   border-left: 1px solid #fff;
+
   @media screen and (max-width: 768px) {
     border-style: none;
     display: flex;
@@ -134,7 +137,7 @@ export const MenuToggle = styled.div`
 
 export const One = styled.div`
   @media screen and (max-width: 768px) {
-    background:  #fff;
+    background: #fff;
     height: 3px;
     border-radius: 20px;
     width: 100%;
@@ -146,7 +149,7 @@ export const One = styled.div`
 
 export const Two = styled.div`
   @media screen and (max-width: 768px) {
-    background:  #fff;
+    background: #fff;
     height: 3px;
     border-radius: 20px;
     width: 100%;
@@ -158,7 +161,7 @@ export const Two = styled.div`
 
 export const Three = styled.div`
   @media screen and (max-width: 768px) {
-    background:  #fff;
+    background: #fff;
     height: 3px;
     border-radius: 20px;
     width: 100%;

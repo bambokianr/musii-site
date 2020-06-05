@@ -164,6 +164,14 @@ export const Copyright = styled.div`
   @media screen and (max-width: 1060px) {
     margin-bottom: -3px;
   }
+  
+  @media screen and (max-width: 480px) {
+    span {
+      margin-top: 1px;
+    }
+  }
+
+
 `;
 
 export const Divider = styled.span`

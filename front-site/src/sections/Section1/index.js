@@ -4,7 +4,7 @@ import { Container, AnimatedBackground, ImageBackground, Description, FirstPhras
 import { screensCarousel } from '../../utils/contants';
 import ImagesCarousel from '../../components/ImagesCarousel';
 import LegendCarousel from '../../components/LegendCarousel';
-import appStore from '../../assets/appstore.png';
+// import appStore from '../../assets/appstore.png';
 import appStoretemp from '../../assets/appstore_embreve.png';
 import googlePlay from '../../assets/googleplay.png';
 
@@ -27,7 +27,7 @@ function Section1({ isMobileScreen }) {
               <LegendCarousel legend={screensCarousel[indexFocusedCarousel].legend} />
               <StoresBox>
                 <a><CallToAction id="ios" src={appStoretemp} alt="Baixar na AppStore" /></a>
-                <a href="https://play.google.com/store/apps/details?id=com.musii.musii" target="_blank"><CallToAction id="android" src={googlePlay} alt="Baixar no GooglePlay" /></a>
+                <a href="https://play.google.com/store/apps/details?id=com.musii.musii" target="_blank" rel="noopener noreferrer"><CallToAction id="android" src={googlePlay} alt="Baixar no GooglePlay" /></a>
               </StoresBox>
             </Description>
           </Container>

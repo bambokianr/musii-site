@@ -33,7 +33,7 @@ function ImagesCarousel({ images, imgAlt })  {
       var elems = document.querySelectorAll('.carousel');
       M.Carousel.init(elems, {});
       var el = document.querySelector(".carousel");
-      var l = M.Carousel.getInstance(el);
+      // var l = M.Carousel.getInstance(el);
       el.addEventListener('click', () => defineItemFocused());
     }
   });
