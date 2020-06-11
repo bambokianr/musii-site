@@ -29,6 +29,11 @@ export const Container = styled.div`
     align-items: center;
     height: 40vh;
   }
+  @media screen and (max-width: 480px) {
+    height: 45vh;
+    padding-bottom: 35px;
+  }
+
 `;
 
 export const Title = styled.span`
@@ -43,6 +48,9 @@ export const Title = styled.span`
   }
   @media screen and (max-width: 760px) {
     width: 70vw;
+  }
+  @media screen and (max-width: 480px) {
+    width: 90vw;
   }
 `;
 
