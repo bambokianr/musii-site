@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Section1Context from './context';
 import { Container, AnimatedBackground, ImageBackground, Description, FirstPhrase, SecondPhrase, CallToAction, StoresBox } from './styles';
 import { screensCarousel } from '../../utils/contants';
@@ -10,10 +10,6 @@ import googlePlay from '../../assets/googleplay.png';
 
 function Section1({ isMobileScreen }) {
   const [indexFocusedCarousel, setIndexFocusedCarousel] = useState(0);
-
-  useEffect(() => {
-    // console.log('HOME', indexFocusedCarousel);
-  }, [isMobileScreen, indexFocusedCarousel]);
 
   return (
     <Section1Context.Provider value={{ indexFocusedCarousel, setIndexFocusedCarousel }} >

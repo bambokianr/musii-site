@@ -46,12 +46,10 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
 
-
   @media screen and (max-width: 1080px) {
     position: relative;
     top: 250px;
   }
-
   @media screen and (max-width: 480px) {
     min-height: 100%;
     top: 210px;

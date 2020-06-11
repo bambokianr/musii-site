@@ -180,14 +180,9 @@ export const CategoriesIcon = styled.div`
 `;
 
 export const Icon = styled.span`
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   transform: 5s;
 
   img {
-    /* width: 100%; */
     width: 50%;
   }
 `;
