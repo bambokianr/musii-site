@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Nav = styled.div`
   background: ${props => props.sticky ? '#451c5a' : ''};
   transition: ${props => props.sticky ? '0.3s' : ''};
-  height: ${props => props.sticky ? '6vh' : '8vh'};
+  height: ${props => props.sticky ? '54px' : '72px'};
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@ export const Nav = styled.div`
 
   @media screen and (max-width: 768px) {
     background: #451c5a;
-    height: 50px;
+    height: 54px;
   }
 `; 
 
