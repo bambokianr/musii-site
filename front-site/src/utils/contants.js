@@ -22,7 +22,7 @@ export const screensCarousel = [
     url: require('../assets/img4.png'),
     legend: 'encontre seus amigos e descubra o que está rolando de novidade por aí',
   },
-]
+];
 
 export const faq = [
   {
@@ -63,7 +63,7 @@ export const faq = [
         Muita <span>música</span> pra gente :) 
       </Answer>
   },
-]
+];
 
 export const banners = [
   {
@@ -84,4 +84,4 @@ export const banners = [
     url: require('../assets/section3-3.png'),
     color: '#FFF',
   },
-]
+];
