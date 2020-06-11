@@ -4,7 +4,8 @@ export const Container = styled.div`
   width: 50%;
 
   @media screen and (max-width: 1300px) {
-    margin-bottom: -130px;
+    /* margin-bottom: -130px; */
+    margin-bottom: -100px;
   }
   @media screen and (max-width: 1080px) {
     margin-bottom: 0;
@@ -12,10 +13,14 @@ export const Container = styled.div`
 `; 
 
 export const Carousel = styled.div`
-  position: relative;
-  height: 110vh;
+  /* position: relative; */
+  /* height: 110vh; */
   perspective: 1000px;
   margin: 0 40px 260px -60px;
+
+  height: 100vh;
+  overflow: visible;
+
 
   div img {
     width: 250px !important;
@@ -35,7 +40,6 @@ export const Carousel = styled.div`
   }
 
   @media screen and (max-width: 1300px) {
-    /* margin: -300px 50px 0 -10px; */
     margin: -300px 0 0 0;
 
     div img {
@@ -45,7 +49,6 @@ export const Carousel = styled.div`
 
   @media screen and (max-width: 1080px) {
     margin: 0;
-    /* height: 100%; */
     height: 0px;
   }
 
@@ -87,8 +90,6 @@ export const MobileMockup = styled.img`
 `;
 
 export const MobileContainer = styled.div`
-  /* padding-left: 20px; */
-  /* padding-top: 390.5px; */
   img {
     margin-top: -204px;
   }
