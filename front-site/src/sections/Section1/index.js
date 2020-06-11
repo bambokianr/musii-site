@@ -22,8 +22,8 @@ function Section1({ isMobileScreen }) {
           <Container>
             <ImagesCarousel images={screensCarousel} imgAlt="telas do aplicativo Musii" />
             <Description>
-              <FirstPhrase>Uma <span>música</span>.</FirstPhrase>
-              <SecondPhrase>Milhões de <span>conexões</span>.</SecondPhrase>
+              <FirstPhrase>uma <span>música</span></FirstPhrase>
+              <SecondPhrase>milhões de <span>conexões</span></SecondPhrase>
               <LegendCarousel legend={screensCarousel[indexFocusedCarousel].legend} />
               <StoresBox>
                 <a><CallToAction id="ios" src={appStoretemp} alt="Baixar na AppStore" /></a>

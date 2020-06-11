@@ -116,11 +116,8 @@ export const CategoriesBox = styled.div`
   }
 
   &:hover div:nth-child(1) span img {
-    /* color: #4d1d69; */
-    /* height: 38px; */
-    /* margin-top: 10px; */
     width: 70px;
-    margin-top: 8px;
+    margin-top: -2px;
   }
 
   &:hover div:nth-child(3) {
@@ -150,10 +147,8 @@ export const CategoriesBox = styled.div`
 
     div:nth-child(1) span img {
       color: #4d1d69;
-      /* height: 38px; */
-      /* width: 100%; */
       width: 70px;
-      margin-top: 8px;
+      margin-top: -2px;
     }
    
     div:nth-child(3) {
@@ -184,14 +179,15 @@ export const CategoriesIcon = styled.div`
 `;
 
 export const Icon = styled.span`
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   transform: 5s;
 
   img {
-    width: 100%;
+    /* width: 100%; */
+    width: 50%;
   }
 `;
 

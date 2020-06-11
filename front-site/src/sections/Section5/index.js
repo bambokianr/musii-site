@@ -9,15 +9,15 @@ function Section5() {
     <Background>
       <Container>
         <Content>
-          <Title>Suporte</Title>
-          <Subtitle>Como podemos ajudar?</Subtitle>
+          <Title>suporte</Title>
+          <Subtitle>como podemos ajudar?</Subtitle>
           <BoxButtons>
-            <EmailButton subject="Problemas de funcionamento" />
-            <EmailButton subject="Feedback" />
-            <EmailButton subject="Spam" />
-            <EmailButton subject="Outros" />
+            <EmailButton subject="problemas de funcionamento" />
+            <EmailButton subject="feedback" />
+            <EmailButton subject="spam" />
+            <EmailButton subject="outros" />
           </BoxButtons>
-          <Subtitle>Perguntas frequentes</Subtitle>
+          <Subtitle>perguntas frequentes</Subtitle>
           {faq.map((obj, idx) => <ExpansionPanel key={idx} title={obj.title} content={obj.content} />)}
         </Content>
       </Container>

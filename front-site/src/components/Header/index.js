@@ -50,9 +50,9 @@ function Header() {
           </MenuToggle>
           <Links mobileOn={mobileOn}>
             <AnchorsList>
-              <li onClick={e => scrollToAnchor(e, 'home')}>Home</li>  
-              <li onClick={e => scrollToAnchor(e, 'funcionalidades')}>Funcionalidades</li>  
-              <li onClick={e => scrollToAnchor(e, 'sobre-nos')}>Sobre nós</li>  
+              <li onClick={e => scrollToAnchor(e, 'home')}>home</li>  
+              <li onClick={e => scrollToAnchor(e, 'funcionalidades')}>funcionalidades</li>  
+              <li onClick={e => scrollToAnchor(e, 'sobre-nos')}>sobre nós</li>  
             </AnchorsList>
             <SocialMedias>
               <a href="https://www.instagram.com/musii.app/" target="_blank" rel="noopener noreferrer"><CircleBox><RiInstagramLine color="#451c5a" /></CircleBox></a>
