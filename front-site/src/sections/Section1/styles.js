@@ -19,11 +19,16 @@ export const ImageBackground = styled.div`
   background-size: cover;
   background-position: ${props => props.isMobileScreen ? 'right 35% bottom 45%' : 'center center'};
   background-attachment: fixed;
+
+  @media screen and (max-width: 480px) {
+    height: 750px;
+  }
 `; 
 
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
+  min-height: 880px;
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
@@ -43,10 +48,11 @@ export const Description = styled.div`
 
   @media screen and (max-width: 1080px) {
     position: relative;
-    top: 240px;
+    top: 250px;
   }
   @media screen and (max-width: 480px) {
-    top: 225px;
+    min-height: 100%;
+    top: 210px;
   }
 `;
 

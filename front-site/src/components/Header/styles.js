@@ -13,7 +13,7 @@ export const Nav = styled.div`
 
   @media screen and (max-width: 768px) {
     background: #451c5a;
-    height: 6vh;
+    height: 50px;
   }
 `; 
 

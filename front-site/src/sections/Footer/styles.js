@@ -170,8 +170,6 @@ export const Copyright = styled.div`
       margin-top: 1px;
     }
   }
-
-
 `;
 
 export const Divider = styled.span`

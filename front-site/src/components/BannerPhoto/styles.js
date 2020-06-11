@@ -1,10 +1,16 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const ImageBackground = styled.div`
   background: ${props => `url(${props.background})`};
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  animation: ${props => (props.idxBanner === 0 || props.idxBanner === 1 || props.idxBanner === 2) && css`fadeIn ease 0.4s`};
+  
+  @keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1 ;}
+  }
 `;
 
 export const Container = styled.div`
@@ -29,6 +35,11 @@ export const Container = styled.div`
     align-items: center;
     height: 40vh;
   }
+  @media screen and (max-width: 480px) {
+    height: 45vh;
+    padding-bottom: 35px;
+  }
+
 `;
 
 export const Title = styled.span`
@@ -43,6 +54,9 @@ export const Title = styled.span`
   }
   @media screen and (max-width: 760px) {
     width: 70vw;
+  }
+  @media screen and (max-width: 480px) {
+    width: 90vw;
   }
 `;
 

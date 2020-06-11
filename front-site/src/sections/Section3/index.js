@@ -10,13 +10,16 @@ function Section3() {
     const idx = (idxBanner+1) % banners.length;
     setIdxBanner(idx);
   }, 10000);
-
+  
+  const newIdx = idxBanner;
   return (
     <BannerPhoto 
-      title={banners[idxBanner].title}
-      description={banners[idxBanner].description}
-      url={banners[idxBanner].url}
-      color={banners[idxBanner].color}
+      key={newIdx}
+      idxBanner={newIdx}
+      title={banners[newIdx].title}
+      description={banners[newIdx].description}
+      url={banners[newIdx].url}
+      color={banners[newIdx].color}
     />
   );
 }

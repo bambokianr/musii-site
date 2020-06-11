@@ -9,7 +9,7 @@ function Section2() {
     <ImageBackground id="funcionalidades">
       <Container>
         <FirstPhrase>a rede social da música</FirstPhrase>
-        <SecondPhrase>Com um feed aberto e através do mapa, vivencie uma maneira única de encontrar pessoas, eventos, lugares, seus artistas favoritos e até novos sons.</SecondPhrase>
+        <SecondPhrase>com um feed aberto e através do mapa, vivencie uma maneira única de encontrar pessoas, eventos, lugares, seus artistas favoritos e até novos sons</SecondPhrase>
         <ThirdPhrase>sonhamos em formar a maior rede de música do mundo e nessa jornada te ajudaremos a encontrar</ThirdPhrase>
         <CategoriesContainer>
           <CategoriesBox>
@@ -17,7 +17,7 @@ function Section2() {
             <h3>sons</h3>
             <CategoriesContent>
               <h3>sons</h3>
-              <p>Depare-se com novos artistas, bandas e álbuns que nunca tinha escutado antes.</p>
+              <p>depare-se com novos artistas, bandas e álbuns que nunca tinha escutado antes</p>
             </CategoriesContent>
           </CategoriesBox>
           <CategoriesBox>
@@ -25,7 +25,7 @@ function Section2() {
             <h3>pessoas</h3>
             <CategoriesContent>
               <h3>pessoas</h3>
-              <p>Descubra o perfil musical dos seus melhores amigos e conecte-se com quem tem o gosto parecido com você.</p>
+              <p>descubra o perfil musical dos seus melhores amigos e conecte-se com quem tem o gosto parecido com você</p>
             </CategoriesContent>
           </CategoriesBox>
           <CategoriesBox>
@@ -33,7 +33,7 @@ function Section2() {
             <h3>lugares</h3>
             <CategoriesContent>
               <h3>lugares</h3>
-              <p>Encontre bares, baladas e casas de show que tocam o som que você quer ouvir naquele dia.</p>
+              <p>encontre bares, baladas e casas de show que tocam o som que você quer ouvir naquele dia</p>
             </CategoriesContent>
           </CategoriesBox>
         </CategoriesContainer>

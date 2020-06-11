@@ -68,19 +68,19 @@ export const faq = [
 export const banners = [
   {
     title: 'a rede social da música',
-    description: 'Somos uma rede formada por pessoas que, assim como você, amam a música e gostam de vivê-la o tempo inteiro.',
+    description: 'somos uma rede formada por pessoas que, assim como você, amam a música e gostam de vivê-la o tempo inteiro',
     url: require('../assets/section3-1.png'),
     color: '#FFF',
   },
   {
     title: 'vídeos verticais curtos',
-    description: 'No musii, você faz posts no estilo de histórias com fotos, textos ou vídeos, além de suas músicas prediletas tocando junto.',
+    description: 'no musii, você faz posts no estilo de histórias com fotos, textos ou vídeos, além de suas músicas prediletas tocando junto',
     url: require('../assets/section3-2.png'),
     color: '#FFF',
   },
   {
     title: 'descubra os sons que estão ouvindo em qualquer lugar',
-    description: 'Navegue pelo mapa, veja o que as pessoas estão postando em diversos lugares e deixe você também sua marca no mundo.',
+    description: 'navegue pelo mapa, veja o que as pessoas estão postando em diversos lugares e deixe você também sua marca no mundo',
     url: require('../assets/section3-3.png'),
     color: '#FFF',
   },

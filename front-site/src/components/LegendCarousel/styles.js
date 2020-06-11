@@ -5,9 +5,9 @@ export const Container = styled.div`
 `; 
 
 export const Content = styled.div`
-  border: 0.8px solid #cc78f7;
+  border: 0.8px solid #DD9AFF;
 	display: inline-block;
-  color: #cc78f7;
+  color: #DD9AFF;
   font-size: 16px;
   border-radius: 8px;
   padding: 8px 12px;

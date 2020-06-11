@@ -16,9 +16,3 @@ export function useInterval(callback, delay) {
     }
   }, [delay]);
 }
-
-// export function circularSlice(arr, start, end) {
-//   return (end < start) 
-//     ? arr.slice(start).concat(arr.slice(0, end))
-//     : arr.slice(start, end)
-// }

@@ -8,7 +8,7 @@ export const Content = styled.span`
   padding: 4px 12px;
   margin-left: 8px;
   
-  a  {
+  a {
     text-decoration: none;
     color: #cc78f7;
   }
