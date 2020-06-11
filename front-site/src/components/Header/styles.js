@@ -128,7 +128,6 @@ export const MenuToggle = styled.div`
     cursor: pointer;
     width: 32px;
     margin-top: ${props => props.mobileOn ? '10px' : '0'}; 
-    /* margin-top: ${props => props.mobileOn ? '13px' : '0'};  */
     margin-right: ${props => props.mobileOn ? '26px' : '24px'};
     position: ${props => props.mobileOn ? 'absolute' : ''};
     right: ${props => props.mobileOn ? '0' : ''};
