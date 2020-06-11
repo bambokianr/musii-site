@@ -12,24 +12,49 @@ export const Container = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   color: ${props => props.color};
-  height: 70vh;
+  height: 60vh;
   padding: 60px 24px;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
   justify-content: flex-end;
+
+  @media screen and (max-width: 1400px) {
+    padding: 60px 76px;
+  }
+  @media screen and (max-width: 1000px) {
+    height: 40vh;
+  }
+  @media screen and (max-width: 760px) {
+    text-align: center;
+    align-items: center;
+    height: 40vh;
+  }
 `;
 
 export const Title = styled.span`
   font-weight: 600;
-  font-size: 3.6rem;
+  font-size: 36px;
   line-height: 1em;
   width: 45%;
   margin-bottom: 8px;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 26px;
+  }
+  @media screen and (max-width: 760px) {
+    width: 70vw;
+  }
 `;
 
 export const Description = styled.span`
-  font-size:2rem;
+  font-size:20px;
   line-height: 1.2em;
   width: 45%;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 760px) {
+    width: 70vw;
+  }
 `;

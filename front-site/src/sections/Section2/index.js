@@ -1,6 +1,5 @@
 import React from 'react';
 import { ImageBackground, Container, FirstPhrase, SecondPhrase, ThirdPhrase, CategoriesContainer, CategoriesBox, CategoriesIcon, Icon, CategoriesContent } from './styles';
-
 import musicIcon from '../../assets/music-icon.svg';
 import peopleIcon from '../../assets/people-icon.svg';
 import eventsIcon from '../../assets/events-icon.svg';
@@ -9,9 +8,9 @@ function Section2() {
   return (
     <ImageBackground id="funcionalidades">
       <Container>
-        <FirstPhrase>A rede social da música</FirstPhrase>
+        <FirstPhrase>a rede social da música</FirstPhrase>
         <SecondPhrase>Com um feed aberto e através do mapa, vivencie uma maneira única de encontrar pessoas, eventos, lugares, seus artistas favoritos e até novos sons.</SecondPhrase>
-        <ThirdPhrase>Sonhamos em formar a maior rede de música do mundo e nessa jornada te ajudaremos a encontrar</ThirdPhrase>
+        <ThirdPhrase>sonhamos em formar a maior rede de música do mundo e nessa jornada te ajudaremos a encontrar</ThirdPhrase>
         <CategoriesContainer>
           <CategoriesBox>
             <CategoriesIcon><Icon><img src={musicIcon} alt="Ícone música" /></Icon></CategoriesIcon>

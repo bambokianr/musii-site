@@ -1,62 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import Section1Context from './context';
-import { Container, AnimatedBackground, ImageBackground, Description, FirstPhrase, SecondPhrase, ThirdPhrase, CallToAction, StoresBox } from './styles';
+import { Container, AnimatedBackground, ImageBackground, Description, FirstPhrase, SecondPhrase, CallToAction, StoresBox } from './styles';
+import { screensCarousel } from '../../utils/contants';
 import ImagesCarousel from '../../components/ImagesCarousel';
 import LegendCarousel from '../../components/LegendCarousel';
-
-import appStore from '../../assets/appstore.png';
+// import appStore from '../../assets/appstore.png';
+import appStoretemp from '../../assets/appstore_embreve.png';
 import googlePlay from '../../assets/googleplay.png';
 
-import img1 from '../../assets/img1.png';
-import img2 from '../../assets/img2.png';
-import img3 from '../../assets/img3.png';
-import img4 from '../../assets/img4.png';
-
-const screensCarousel = [
-  {
-    id: Math.random(),
-    url: img1,
-    legend: 'navegue no mapa e descubra novos sons e pessoas',
-  },
-  
-  {
-    id: Math.random(),
-    url: img2,
-    legend: 'visualize, curta, comente posts e siga novas pessoas',
-  },
-  {
-    id: Math.random(),
-    url: img3,
-    legend: 'visite novos perfis e veja os posts de seus amigos no mapa',
-  },
-  {
-    id: Math.random(),
-    url: img4,
-    legend: 'selecione a música que você deseja para acompanhar seu post',
-  },
-]
-
-function Section1() {
+function Section1({ isMobileScreen }) {
   const [indexFocusedCarousel, setIndexFocusedCarousel] = useState(0);
 
   useEffect(() => {
     // console.log('HOME', indexFocusedCarousel);
-  }, [indexFocusedCarousel]);
-  
+  }, [isMobileScreen, indexFocusedCarousel]);
+
   return (
     <Section1Context.Provider value={{ indexFocusedCarousel, setIndexFocusedCarousel }} >
-      <AnimatedBackground>
-        <ImageBackground id="home">  
+      <AnimatedBackground isMobileScreen={isMobileScreen}>
+        <ImageBackground isMobileScreen={isMobileScreen} id="home">  
           <Container>
             <ImagesCarousel images={screensCarousel} imgAlt="telas do aplicativo Musii" />
             <Description>
-              <FirstPhrase>Uma <span>música</span>.</FirstPhrase>
-              <SecondPhrase>Milhões de <span>conexões</span>.</SecondPhrase>
-              {/* <ThirdPhrase>Conectando pessoas pela música.</ThirdPhrase> */}
+              <FirstPhrase>uma <span>música</span></FirstPhrase>
+              <SecondPhrase>milhões de <span>conexões</span></SecondPhrase>
               <LegendCarousel legend={screensCarousel[indexFocusedCarousel].legend} />
               <StoresBox>
-                <a href="#" target="_blank"><CallToAction width="178.2px" src={appStore} alt="Baixar na AppStore" /></a>
-                <a href="#" target="_blank"><CallToAction width="191px" src={googlePlay} alt="Baixar no GooglePlay" /></a>
+                <a><CallToAction id="ios" src={appStoretemp} alt="Baixar na AppStore" /></a>
+                <a href="https://play.google.com/store/apps/details?id=com.musii.musii" target="_blank" rel="noopener noreferrer"><CallToAction id="android" src={googlePlay} alt="Baixar no GooglePlay" /></a>
               </StoresBox>
             </Description>
           </Container>

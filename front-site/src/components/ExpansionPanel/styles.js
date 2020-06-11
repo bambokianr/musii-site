@@ -5,6 +5,10 @@ export const Container = styled.div`
   border-bottom: 1px solid #77129282;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 export const Title = styled.div`
@@ -13,6 +17,10 @@ export const Title = styled.div`
   justify-content: space-between;
   padding: 8px 12px 4px;
   color: #771292;
+
+  @media screen and (max-width: 480px) {
+    padding: 8px 12px 0;
+  }
 
   span:nth-child(2) {
     animation: ${props => props.isOpen ? 'rotation-open 0.2s' : 'rotation-close 0.2s'};
@@ -45,23 +53,22 @@ export const Title = styled.div`
 `;
 
 export const Content = styled.div`
-  /* animation: ${props => props.isOpen ? 'show-content 0.3s' : ''};
-  animation-fill-mode: forwards; */
-  padding: 4px 12px;
+  padding: 4px 12px 20px;
   font-size: 1.6rem;
   color: #565060;
-  /* span {
-    font-weight: 700;
-  } */
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 
   @keyframes show-content {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
+    0% {
+      opacity: 0;
     }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export const Answer = styled.span`
