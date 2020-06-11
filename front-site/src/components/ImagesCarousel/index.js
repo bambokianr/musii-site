@@ -6,8 +6,8 @@ import { useInterval } from '../../utils/functions';
 import { Container, Carousel, MobileMockup, MobileContainer } from './styles';
 
 function ImagesCarousel({ images, imgAlt })  {
-  const [isMobile, setIsMobile] = useState(window.screen.width <= 1080 ? true: false);
-  window.addEventListener("resize", () => setIsMobile(window.screen.width <= 1080 ? true: false));
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1080 ? true: false);
+  window.addEventListener("resize", () => setIsMobile(window.innerWidth <= 1080 ? true: false));
   
   const [focusedIndex, setFocusedIndex] = useState(0);
   const { setIndexFocusedCarousel } = useContext(Section1Context);

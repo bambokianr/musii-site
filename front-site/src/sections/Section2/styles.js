@@ -58,9 +58,10 @@ export const ThirdPhrase = styled.span`
   font-weight: 600;
   font-size: 26px;
   margin: 24px 0 12px;
+  width: 50%;
 
-  @media screen and (max-width: 1280px) {
-    width: 80%;
+  @media screen and (max-width: 1100px) {
+    width: 65%;
   }
   @media screen and (max-width: 1060px) {
     margin-bottom: 0px;

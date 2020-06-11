@@ -4,17 +4,15 @@ export const Container = styled.div`
   width: 50%;
 
   @media screen and (max-width: 1300px) {
-    /* margin-bottom: -130px; */
-    margin-bottom: -100px;
+    margin-top: 100px;
   }
   @media screen and (max-width: 1080px) {
+    margin-top: 0;
     margin-bottom: 0;
   }
 `; 
 
 export const Carousel = styled.div`
-  /* position: relative; */
-  /* height: 110vh; */
   perspective: 1000px;
   margin: 0 40px 260px -60px;
 
@@ -40,7 +38,8 @@ export const Carousel = styled.div`
   }
 
   @media screen and (max-width: 1300px) {
-    margin: -300px 0 0 0;
+    height: 700px;
+    margin: -250px 0 0 0;
 
     div img {
       width: 190px !important;
@@ -49,10 +48,12 @@ export const Carousel = styled.div`
 
   @media screen and (max-width: 1080px) {
     margin: 0;
-    height: 0px;
+    height: 0;
   }
 
   @media screen and (max-width: 480px) {
+    margin-top: 550px;
+
     div img {
       width: 170px !important;
     } 

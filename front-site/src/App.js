@@ -9,8 +9,8 @@ import Section5 from './sections/Section5';
 import Footer from './sections/Footer';
 
 function App() {
-  const [isMobileScreen, setIsMobileScreen] = useState(window.screen.width <= 768 ? true: false);
-  window.addEventListener("resize", () => setIsMobileScreen(window.screen.width <= 768 ? true: false));
+  const [isMobileScreen, setIsMobileScreen] = useState(window.innerWidth <= 768 ? true: false);
+  window.addEventListener("resize", () => setIsMobileScreen(window.innerWidth <= 768 ? true: false));
   return (
     <>
       <Header />
