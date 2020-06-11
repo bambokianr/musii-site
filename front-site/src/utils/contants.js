@@ -55,7 +55,7 @@ export const faq = [
       </Answer>
   },
   {
-    title: 'como eu solicito um no musii?',
+    title: 'como eu solicito um suporte no musii?',
     content: 
       <Answer>
         Muito fácil, só <span>mandar</span> um e-mail para nosso suporte. As instruções estão logo acima.<br/>
