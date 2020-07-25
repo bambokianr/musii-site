@@ -113,11 +113,11 @@ export const StoresBox = styled.div`
 `;
 
 export const CallToAction = styled.img`
-  cursor: ${props => props.id ==='ios' ? 'not-allowed' : 'pointer'};
+  cursor: pointer;
   padding-top: 36px;
   padding-right: 16px;
   width: ${props => props.id ==='ios' ? '177px' : '191px'};
-  opacity: ${props => props.id ==='ios' ? '1' : '0.8'};
+  opacity: 0.8;
 
   &:hover {
     opacity: 1;
