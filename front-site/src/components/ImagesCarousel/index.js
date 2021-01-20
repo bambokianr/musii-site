@@ -52,7 +52,7 @@ function ImagesCarousel({ images, imgAlt })  {
   }, isMobile ? 8000 : 10000);
 
   return (
-    <Container onClick={() => console.log('ImagesCarousel')} >
+    <Container>
       <Carousel className={isMobile ? "" : "carousel"}>
         { isMobile ?
             <MobileContainer key={images[focusedIndex].id}><img src={images[focusedIndex].url} alt={imgAlt} /></MobileContainer>
